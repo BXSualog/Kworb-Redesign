@@ -1,0 +1,168 @@
+.page-charts .home-welcome {
+    margin-bottom: 28px;
+}
+
+.page-charts .home-welcome h1 {
+    font-size: 36px;
+}
+
+.page-charts .home-welcome .section-lead {
+    font-size: 16px;
+    max-width: 540px;
+}
+
+.ch-subnav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4px;
+    padding: 4px;
+    margin: 0 0 28px;
+    max-width: 280px;
+    background: #101510;
+    border: 1px solid #1D261F;
+    border-radius: 999px;
+}
+
+.ch-subnav a {
+    display: block;
+    padding: 11px 12px;
+    border-radius: 999px;
+    background: transparent;
+    color: #B3B8B4;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.ch-subnav a:hover,
+.ch-subnav a:focus {
+    color: #FFFFFF;
+    background: #161C17;
+}
+
+.ch-subnav a.is-current {
+    background: #1DB954;
+    color: #050706;
+}
+
+.ch-block-title {
+    font-size: 15px;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #B3B8B4;
+    font-weight: 700;
+    margin: 8px 0 12px;
+}
+
+.page-charts .table-wrap {
+    background: #080B09;
+    border: 1px solid #1D261F;
+    border-radius: 12px;
+    box-shadow: none;
+    overflow-x: auto;
+}
+
+.page-charts table {
+    min-width: 1080px;
+    max-width: none;
+}
+
+.page-charts-albums table {
+    min-width: 760px;
+}
+
+.page-charts thead th {
+    background: #080B09;
+    padding: 12px 14px;
+    border-bottom: 1px solid #1D261F;
+    color: #8B928C;
+}
+
+.page-charts td {
+    padding: 11px 14px;
+    font-size: 13px;
+    color: #C5CBC6;
+}
+
+.page-charts td.country {
+    color: #FFFFFF;
+    font-weight: 700;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.page-charts td.song {
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 170px;
+}
+
+.page-charts:not(.page-charts-albums) tbody td:nth-child(2),
+.page-charts-albums tbody td:nth-child(2) {
+    color: #E8A04A;
+}
+
+.page-charts:not(.page-charts-albums) tbody td:nth-child(3),
+.page-charts-albums tbody td:nth-child(4) {
+    color: #3DDC76;
+}
+
+.page-charts:not(.page-charts-albums) tbody td:nth-child(4),
+.page-charts-albums tbody td:nth-child(3) {
+    color: #FF7EB6;
+}
+
+.page-charts:not(.page-charts-albums) tbody td:nth-child(5) {
+    color: #FF6B6B;
+}
+
+.page-charts:not(.page-charts-albums) tbody td:nth-child(6) {
+    color: #6EA8FF;
+}
+
+.page-charts:not(.page-charts-albums) tbody td:nth-child(7) {
+    color: #C4A5FF;
+}
+
+.page-charts:not(.page-charts-albums) thead th:nth-child(2),
+.page-charts-albums thead th:nth-child(2) {
+    color: #E8A04A;
+}
+
+.page-charts:not(.page-charts-albums) thead th:nth-child(3),
+.page-charts-albums thead th:nth-child(4) {
+    color: #3DDC76;
+}
+
+.page-charts:not(.page-charts-albums) thead th:nth-child(4),
+.page-charts-albums thead th:nth-child(3) {
+    color: #FF7EB6;
+}
+
+.page-charts:not(.page-charts-albums) thead th:nth-child(5) {
+    color: #FF6B6B;
+}
+
+.page-charts:not(.page-charts-albums) thead th:nth-child(6) {
+    color: #6EA8FF;
+}
+
+.page-charts:not(.page-charts-albums) thead th:nth-child(7) {
+    color: #C4A5FF;
+}
+
+.page-charts tbody tr:nth-child(even) td {
+    background: #0C110D;
+}
+
+.page-charts tbody tr:hover td {
+    background: #101510;
+}
+
+@media (max-width: 768px) {
+    .page-charts .home-welcome h1 {
+        font-size: 28px;
+    }
+}

@@ -3,139 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kworb Redesign</title>
-    <link rel="stylesheet" href="css/landing.css">
+    <title>kworb.net</title>
+    <meta name="description" content="Daily charts, stream counts, artist totals and radio spins. Spotify, iTunes, YouTube. Country lists and older weeks are kept around too.">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/landing.css">
 </head>
 <body>
-    <div id="landing">
-        <header class="landing-header">
-            <div class="landing-header-bar">
-                <a class="brand" href="index.html">Kworb</a>
-                <nav class="landing-nav" aria-label="Landing">
+
+    <div id="front">
+        <header class="mast">
+            <div class="mast-row">
+                <a class="mark" href="index.html">KWORB</a>
+                <nav class="mast-nav" aria-label="Landing">
                     <a href="pages/site/welcome.html">Welcome</a>
                     <a href="pages/site/stats.html">Visitor Stats</a>
                     <a href="pages/site/faq.html">FAQ</a>
                     <a href="pages/site/privacy.html">Privacy</a>
                 </nav>
-                <a class="btnPill-headerCTA" href="pages/home.html">Explore</a>
+                <a class="go mast-go" href="pages/home.html">Home</a>
             </div>
         </header>
-        
-        <section class="hero" aria-label="Introduction">
-            <p class = "eyebrow">Music charts and streaming data</p>
-            <h1>Discover <br> music data <br> <span>from everywhere</span></h1>
-            <p class="hero-lead">
-                Charts, streaming statistics, artist rankings, and historical music data from platforms around the world. In one place.
+
+        <section class="splash" aria-label="Introduction">
+            <p class="kicker">kworb.net</p>
+            <h1>
+                Charts and streams.<br>
+                Mostly tables.<br>
+                <span>Updated a lot.</span>
+            </h1>
+            <p class="splash-txt">
+                I pull rankings and play counts from Spotify, iTunes and YouTube,
+                then leave them here so you can check what moved. Country charts
+                too. Some weeks go back pretty far if you dig.
             </p>
-            <a class="btn-pill" href="pages/home.html">Explore Kworb</a>
+            <a class="go" href="pages/home.html">Open the home page</a>
         </section>
 
-        <section class="section explore" id="explore">
-            <h2>Explore the Data</h2>
-            <div class ="product-row">
-                <article class="simple-num">
-                    <span class="card-num">01</span>
+        <section class="chunk browse" id="browse">
+            <h2>What's actually on here</h2>
+            <div class="trio">
+                <article class="tile">
                     <h3>Charts</h3>
-                    <p>See music rankings and how songs move up or down.</p>
-                    <a class="btn-pill btn-small" href="pages/discover/charts.html">Open Charts</a>
+                    <p>Top lists that refresh often. Useful if you care whether something climbed overnight or just sat there.</p>
+                    <a class="go go-sm" href="pages/discover/charts.html">Charts</a>
                 </article>
-            <article class="simple-card">
-                    <span class="card-num">02</span>
+                <article class="tile">
                     <h3>Artists</h3>
-                    <p>Compare artists across Spotify, iTunes, and more.</p>
-                    <a class="btn-pill btn-small" href="pages/artists/artists.html">Open artists</a>
+                    <p>There's a combined iTunes / Spotify ranking. Each name has its own page with the countries a song is still charting in.</p>
+                    <a class="go go-sm" href="pages/artists/artists.html">Artist list</a>
                 </article>
-                <article class="simple-card">
-                    <span class="card-num">03</span>
+                <article class="tile">
                     <h3>Songs</h3>
-                    <p>Follow streams and chart history for individual songs.</p>
-                    <a class="btn-pill btn-small" href="pages/platforms/spotify.html">Open songs</a>
+                    <p>Spotify totals are based on time spent in a top 200, not a secret official lifetime counter. Still handy for history.</p>
+                    <a class="go go-sm" href="pages/platforms/spotify.html">Spotify</a>
                 </article>
             </div>
         </section>
- <section class="section platforms-intro" id="platforms">
-            <h2>Tracked platforms</h2>
-            <div class="platform-grid">
-                <a class="simple-card" href="pages/platforms/spotify.html">
+
+        <section class="chunk svcs" id="svcs">
+            <h2>Where the numbers come from</h2>
+            <div class="svc-grid">
+                <a class="tile" href="pages/platforms/spotify.html">
                     <img src="icons/Spotify.png" alt="" width="32" height="32">
                     Spotify
                 </a>
-                <a class="simple-card" href="pages/platforms/itunes.html">
+                <a class="tile" href="pages/platforms/itunes.html">
                     <img src="icons/AppleMusic.png" alt="" width="32" height="32">
                     Apple Music
                 </a>
-                <a class="simple-card" href="pages/platforms/itunes.html">
+                <a class="tile" href="pages/platforms/itunes.html">
                     <img src="icons/iTunes.png" alt="" width="32" height="32">
                     iTunes
                 </a>
-                <a class="simple-card" href="pages/platforms/youtube.html">
+                <a class="tile" href="pages/platforms/youtube.html">
                     <img src="icons/YT.png" alt="" width="32" height="32">
                     YouTube
                 </a>
-                <a class="simple-card" href="pages/discover/charts.html">
+                <a class="tile" href="pages/discover/charts.html">
                     <img src="icons/Shazam.png" alt="" width="32" height="32">
                     Shazam
                 </a>
-                <a class="simple-card" href="pages/discover/charts.html">
+                <a class="tile" href="pages/discover/charts.html">
                     <img src="icons/Deezer.png" alt="" width="32" height="32">
                     Deezer
                 </a>
             </div>
-            <a class="btn-pill" href="pages/discover/charts.html">View charts</a>
+            <a class="go" href="pages/discover/charts.html">Jump to charts</a>
         </section>
 
-        <section class="section more" id="regions">
-            <h2>From global to local</h2>
-            <div class="product-row">
-                <article class="simple-card">
-                    <span class="card-num">01</span>
+        <section class="chunk spots" id="spots">
+            <h2>Countries, radio, old weeks</h2>
+            <div class="trio">
+                <article class="tile">
                     <h3>Worldwide</h3>
-                    <p>See charts by country and region, not only the global list.</p>
-                    <a class="btn-pill btn-small" href="pages/discover/worldwide.html">Open worldwide</a>
+                    <p>Composite iTunes lists by country, plus Europe. Points are about reach, not sales estimates. Don't treat them like SoundScan.</p>
+                    <a class="go go-sm" href="pages/discover/worldwide.html">iTunes WW</a>
                 </article>
-                <article class="simple-card">
-                    <span class="card-num">02</span>
+                <article class="tile">
                     <h3>Radio</h3>
-                    <p>Check which songs are getting played on US radio.</p>
-                    <a class="btn-pill btn-small" href="pages/discover/radio.html">Open radio</a>
+                    <p>US airplay from Mediabase via All Access. Spins, audience, bullets. A bit dense the first time you look at it.</p>
+                    <a class="go go-sm" href="pages/discover/radio.html">Radio</a>
                 </article>
-                <article class="simple-card">
-                    <span class="card-num">03</span>
+                <article class="tile">
                     <h3>Archives</h3>
-                    <p>Look back at older charts and year-end lists.</p>
-                    <a class="btn-pill btn-small" href="pages/home.html">Open archives</a>
+                    <p>Year-end stuff and older charts are still sitting here. Browsing them is a bit clunky, which I keep meaning to fix.</p>
+                    <a class="go go-sm" href="pages/home.html">Home</a>
                 </article>
             </div>
         </section>
 
-        <section class="section why" id="why">
-            <h2>Why use Kworb?</h2>
-            <div class="product-row">
-                <article class="simple-card">
-                    <span class="card-num">01</span>
-                    <h3>All in one place</h3>
-                    <p>Charts from several music platforms on one website.</p>
+        <section class="chunk plus" id="plus">
+            <h2>A few things to know</h2>
+            <div class="trio">
+                <article class="tile">
+                    <h3>No login</h3>
+                    <p>Just pages. I keep them static on purpose so a traffic spike doesn't knock the server over.</p>
                 </article>
-                <article class="simple-card">
-                    <span class="card-num">02</span>
-                    <h3>Easy to compare</h3>
-                    <p>Compare artists, songs, platforms, and countries.</p>
+                <article class="tile">
+                    <h3>Tables, not graphs</h3>
+                    <p>If you want a chart image, export the numbers and make one. I prefer seeing the actual values.</p>
                 </article>
-                <article class="simple-card">
-                    <span class="card-num">03</span>
-                    <h3>History included</h3>
-                    <p>Look at how songs and artists have performed over time.</p>
+                <article class="tile">
+                    <h3>It stays up</h3>
+                    <p>Yesterday, last month, sometimes last year. That's kind of the whole point of keeping this around.</p>
                 </article>
             </div>
         </section>
 
-        <section class="cta-band" id="cta">
-            <h2>Ready to explore?</h2>
-            <a class="btn-dark" href="pages/home.html">Explore Kworb</a>
+        <section class="lastbit" id="lastbit">
+            <h2>Home page is this way</h2>
+            <a class="go-ink" href="pages/home.html">Go in</a>
         </section>
     </div>
 
-    </div>
 </body>
 </html>

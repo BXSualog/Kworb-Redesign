@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Digital Artist Ranking — Kworb</title>
+    <meta name="description" content="Global digital artist ranking across Apple Music, Spotify, iTunes, YouTube, Shazam, and Deezer.">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/artists/artists.css">
+</head>
+<body class="page-artists">
+    <div class="home-app" id="top">
+        <aside class="home-sidebar" id="site-nav">
+            <a class="home-logo" href="../../index.html">KWORB</a>
+            <nav aria-label="Kworb sections">
+                <div class="nav-group">
+                    <a class="nav-home" href="../home.html">Home</a>
+                </div>
+                <div class="nav-group">
+                    <p class="nav-label">Discover</p>
+                    <a class="nav-charts" href="../discover/charts.html">Charts</a>
+                    <a class="nav-worldwide" href="../discover/worldwide.html">Worldwide</a>
+                    <a class="nav-trending" href="../discover/trending.html">Trending</a>
+                    <a class="nav-radio" href="../discover/radio.html">Radio</a>
+                </div>
+                <div class="nav-group">
+                    <p class="nav-label">Platforms</p>
+                    <a class="nav-spotify" href="../platforms/spotify.html">Spotify</a>
+                    <a class="nav-itunes" href="../platforms/itunes.html">iTunes</a>
+                    <a class="nav-youtube" href="../platforms/youtube.html">YouTube</a>
+                </div>
+                <div class="nav-group">
+                    <p class="nav-label">Artists</p>
+                    <a class="nav-artists is-active" href="../artists/artists.html">Artists</a>
+                </div>
+            </nav>
+        </aside>
+
+        <div class="home-stage">
+            <input class="nav-check" type="checkbox" id="nav-open" aria-label="Open menu">
+            <label class="nav-backdrop" for="nav-open">
+                <span class="visually-hidden">Close menu</span>
+            </label>
+            <header class="home-top">
+                <label class="nav-toggle" for="nav-open">
+                    <span class="visually-hidden">Menu</span>
+                    <span class="nav-toggle-bars" aria-hidden="true"></span>
+                </label>
+                <label class="home-search">
+                    <span class="visually-hidden">Search</span>
+                    <input type="search" name="q" placeholder="Search artist, song, album..." autocomplete="off">
+                </label>
+                <a class="home-back" href="../../index.html">Back to top</a>
+            </header>
+
+            <main class="home-content">
+                <section class="home-welcome">
+                    <p class="eyebrow">Artists</p>
+                    <h1>Global digital artists</h1>
+                    <p class="section-lead">Composite ranking from chart presence across Apple Music, Spotify, iTunes, YouTube, Shazam, and Deezer.</p>
+                </section>
+
+                <div class="ar-switcher" role="navigation" aria-label="Artist ranking views">
+                    <a class="ar-tab is-current" href="artists.html" aria-current="page">Main Page</a>
+                    <a class="ar-tab" href="more.html">More Artists</a>
+                </div>
+
+                <div class="ar-heading">
+                    <h2>Global Digital Artist Ranking</h2>
+                    <p>2026-09-11 11:50 EDT</p>
+                </div>
+                <p class="note">Click an artist’s name to see their chart positions in detail.</p>
+
+                <div class="table-wrap" id="ranking">
+                    <table>
+                        <caption class="visually-hidden">Global digital artist ranking for 11 September 2026, top 50</caption>
+                        <thead>
+                            <tr>
+                                <th>Pos</th>
+                                <th>P+</th>
+                                <th>Artist</th>
+                                <th class="num">Points</th>
+                                <th class="num">Apple M</th>
+                                <th class="num">Spotify</th>
+                                <th class="num">iTunes</th>
+                                <th class="num">YouTube</th>
+                                <th class="num">Shazam</th>
+                                <th class="num">Deezer</th>
+                                <th>Top Country</th>
+                                <th class="num">#</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="same">
+                                <td class="pos" data-value="1">1</td>
+                                <td class="chg same" data-value="0">=</td>
+                                <td class="artist" data-value="Ariana Grande">Ariana Grande</td>
+                                <td class="num pts" data-value="3657">3657</td>
+                                <td class="num" data-value="2282">2282</td>
+                                <td class="num" data-value="703">703</td>
+                                <td class="num" data-value="433">433</td>
+                                <td class="num" data-value="59">59</td>
+                                <td class="num" data-value="83">83</td>
+                                <td class="num" data-value="97">97</td>
+                                <td class="country" data-value="Brazil">Brazil</td>
+                                <td class="num" data-value="144">144</td>
+                            </tr>
+                            <tr class="same">
+                                <td class="pos" data-value="2">2</td>
+                                <td class="chg same" data-value="0">=</td>
+                                <td class="artist" data-value="Bad Bunny">Bad Bunny</td>
+                                <td class="num pts" data-value="3574">3574</td>
+                                <td class="num" data-value="1869">1869</td>
+                                <td class="num" data-value="1439">1439</td>
+                                <td class="num" data-value="56">56</td>
+                                <td class="num" data-value="5">5</td>
+                                <td class="num" data-value="38">38</td>
+                                <td class="num" data-value="167">167</td>
+                                <td class="country" data-value="Spain">Spain</td>
+                                <td class="num" data-value="97">97</td>
+                            </tr>
+                            <tr class="same">
+                                <td class="pos" data-value="3">3</td>
+                                <td class="chg same" data-value="0">=</td>
+                                <td class="artist" data-value="Drake">Drake</td>
+                                <td class="num pts" data-value="3568">3568</td>
+                                <td class="num" data-value="2911">2911</td>
+                                <td class="num" data-value="483">483</td>
+                                <td class="num" data-value="81">81</td>
+                                <td class="num" data-value="26">26</td>
+                                <td class="num" data-value="13">13</td>
+                                <td class="num" data-value="54">54</td>
+                                <td class="country" data-value="United States">United States</td>
+                                <td class="num" data-value="156">156</td>
+                            </tr>
+                            <tr class="same">
+                                <td class="pos" data-value="4">4</td>
+                                <td class="chg same" data-value="0">=</td>
+                                <td class="artist" data-value="Olivia Rodrigo">Olivia Rodrigo</td>
+                                <td class="num pts" data-value="3108">3108</td>
+                                <td class="num" data-value="1729">1729</td>
+                                <td class="num" data-value="1080">1080</td>
+                                <td class="num" data-value="98">98</td>
+                                <td class="num" data-value="47">47</td>
+                                <td class="num" data-value="52">52</td>
+                                <td class="num" data-value="103">103</td>
+                                <td class="country" data-value="United States">United States</td>
+                                <td class="num" data-value="131">131</td>
+                            </tr>
+                            <tr class="same">
+                                <td class="pos" data-value="5">5</td>
+                                <td class="chg same" data-value="0">=</td>
+                                <td class="artist" data-value="Taylor Swift">Taylor Swift</td>
+                                <td class="num pts" data-value="2519">2519</td>
+                                <td class="num" data-value="1579">1579</td>
+                                <td class="num" data-value="529">529</td>
+                                <td class="num" data-value="176">176</td>
+                                <td class="num" data-value="60">60</td>
+                                <td class="num" data-value="53">53</td>
+                                <td class="num" data-value="122">122</td>
+                                <td class="country" data-value="Australia">Australia</td>
+                                <td class="num" data-value="127">127</td>
+                            </tr>
+                            <tr class="up">
+                                <td class="pos" data-value="6">6</td>
+                                <td class="chg up" data-value="1">+1</td>
+                                <td class="artist" data-value="Omar Courtz">Omar Courtz</td>
+                                <td class="num pts" data-value="2361">2361</td>
+                                <td class="num" data-value="874">874</td>
+                                <td class="num" data-value="1172">1172</td>
+                                <td class="num" data-value="3">3</td>
+                                <td class="num" data-value="260">260</td>
+                                <td class="num" data-value="26">26</td>
+                                <td class="num" data-value="26">26</td>
+                                <td class="country" data-value="Argentina">Argentina</td>
+                                <td class="num" data-value="24">24</td>
+                            </tr>
+                            <tr class="down">
+                                <td class="pos" data-value="7">7</td>
+                                <td class="chg down" data-value="-1">-1</td>
+                                <td class="artist" data-value="KAROL G">KAROL G</td>
+                                <td class="num pts" data-value="2337">2337</td>
+                                <td class="num" data-value="859">859</td>
+                                <td class="num" data-value="825">825</td>
+                                <td class="num" data-value="86">86</td>
+                                <td class="num" data-value="370">370</td>
+                                <td class="num" data-value="85">85</td>
+                                <td class="num" data-value="112">112</td>
+                                <td class="country" data-value="Spain">Spain</td>
+                                <td class="num" data-value="77">77</td>
+                            </tr>
+                            <tr class="same">
+                                <td class="pos" data-value="8">8</td>
+                                <td class="chg same" data-value="0">=</td>
+                                <td class="artist" data-value="Michael Jackson">Michael Jackson</td>
+                                <td class="num pts" data-value="2137">2137</td>
+                                <td class="num" data-value="634">634</td>
+                                <td class="num" data-value="804">804</td>
+                                <td class="num" data-value="217">217</td>
+                                <td class="num" data-value="368">368</td>
+                                <td class="num" data-value="2">2</td>
+                                <td class="num" data-value="112">112</td>
+                                <td class="country" data-value="United States">United States</td>
+                                <td class="num" data-value="132">132</td>
+                            </tr>
+                            <tr class="same">
+                                <td class="pos" data-value="9">9</td>
+                                <td class="chg same" data-value="0">=</td>
+                                <td class="artist" data-value="HUGEL">HUGEL</td>
+                                <td class="num pts" data-value="1849">1849</td>
+                                <td class="num" data-value="470">470</td>
+                                <td class="num" data-value="441">441</td>
+                                <td class="num" data-value="351">351</td>
+                                <td class="num" data-value="187">187</td>
+                                <td class="num" data-value="265">265</td>
+                                <td class="num" data-value="135">135</td>
+                                <td class="country" data-value="Germany">Germany</td>
+                                <td class="num" data-value="101">101</td>
+                            </tr>
+                            <tr class="same">
+                                <td class="pos" data-value="10">10</td>
+                                <td class="chg same" data-value="0">=</td>
+                                <td class="artist" data-value="Shakira">Shakira</td>
+                                <td class="num pts" data-value="1815">1815</td>
+                                <td class="num" data-value="303">303</td>
+                                <td class="num" data-value="292">292</td>
+                                <td class="num" data-value="167">167</td>
+                                <td class="num" data-value="898">898</td>
+                                <td class="num" data-value="56">56</td>
+                                <td class="num" data-value="99">99</td>
+                                <td class="country" data-value="Spain">Spain</td>
+                                <td class="num" data-value="127">127</td>
+                            </tr>
+                            <tr class="same">
+                                <td class="pos" data-value="11">11</td>
+                                <td class="chg same" data-value="0">=</td>
+                                <td class="artist" data-value="Dua Lipa">Dua Lipa</td>
+                                <td class="num pts" data-value="1771">1771</td>
+                                <td class="num" data-value="602">602</td>
+                                <td class="num" data-value="662">662</td>
+                                <td class="num" data-value="178">178</td>
+                                <td class="num" data-value="186">186</td>
+                                <td class="num" data-value="114">114</td>
+                                <td class="num" data-value="29">29</td>
+                                <td class="country" data-value="Indonesia">Indonesia</td>
+                                <td class="num" data-value="116">116</td>
+                            </tr>
+                            <tr class="same">
+                                <td class="pos" data-value="12">12</td>
+                                <td class="chg same" data-value="0">=</td>
+                                <td class="artist" data-value="The Weeknd">The Weeknd</td>
+                                <td class="num pts" data-value="1730">1730</td>
+                                <td class="num" data-value="1066">1066</td>
+                                <td class="num" data-value="524">524</td>
+                                <td class="num" data-value="85">85</td>
+                                <td class="num" data-value="13">13</td>
+                                <td class="num" data-value="11">11</td>
+                                <td class="num" data-value="32">32</td>
+                                <td class="country" data-value="Sweden">Sweden</td>
+                                <td class="num" data-value="147">147</td>
+                            </tr>
+                            <tr class="same">
+                                <td class="pos" data-value="13">13</td>
+                                <td class="chg same" data-value="0">=</td>
+                                <td class="artist" data-value="Olivia Dean">Olivia Dean</td>
+                                <td class="num pts" data-value="1722">1722</td>
+                                <td class="num" data-value="903">903</td>
+                                <td class="num" data-value="530">530</td>
+                                <td class="num" data-value="93">93</td>
+                                <td class="num" data-value="13">13</td>
+                                <td class="num" data-value="54">54</td>
+                                <td class="num" data-value="128">128</td>
+                                <td class="country" data-value="Australia">Australia</td>
+                                <td class="num" data-value="124">124</td>
+                            </tr>
+                            <tr class="up">
+                                <td class="pos" data-value="14">14</td>
+                                <td class="chg up" data-value="2">+2</td>
+                                <td class="artist" data-value="BTS">BTS</td>
+                                <td class="num pts" data-value="1698">1698</td>
+                                <td class="num" data-value="495">495</td>
+                                <td class="num" data-value="806">806</td>
+                                <td class="num" data-value="156">156</td>
+                                <td class="num" data-value="0">0</td>
+                                <td class="num" data-value="12">12</td>
+                                <td class="num" data-value="229">229</td>
+                                <td class="country" data-value="Argentina">Argentina</td>
+                                <td class="num" data-value="121">121</td>
+                            </tr>
+                            <tr class="down">
+                                <td class="pos" data-value="15">15</td>
+                                <td class="chg down" data-value="-1">-1</td>
+                                <td class="artist" data-value="Bruno Mars">Bruno Mars</td>
+                                <td class="num pts" data-value="1670">1670</td>
+                                <td class="num" data-value="593">593</td>
+                                <td class="num" data-value="716">716</td>
+                                <td class="num" data-value="199">199</td>
+                                <td class="num" data-value="53">53</td>
+                                <td class="num" data-value="60">60</td>
+                                <td class="num" data-value="49">49</td>
+                                <td class="country" data-value="Australia">Australia</td>
+                                <td class="num" data-value="120">120</td>
+                            </tr>
+                            <tr class="down">
+                                <td class="pos" data-value="16">16</td>
+                                <td class="chg down" data-value="-1">-1</td>
+                                <td class="artist" data-value="Tame Impala">Tame Impala</td>
+                                <td class="num pts" data-value="1627">1627</td>
+                                <td class="num" data-value="517">517</td>
+                                <td class="num" data-value="515">515</td>
+                                <td class="num" data-value="89">89</td>
+                                <td class="num" data-value="213">213</td>
+                                <td class="num" data-value="168">168</td>
+                                <td class="num" data-value="125">125</td>
+                                <td class="country" data-value="United States">United States</td>
+                                <td class="num" data-value="108">108</td>
+                            </tr>
+                            <tr class="up">
+                                <td class="pos" data-value="17">17</td>
+                                <td class="chg up" data-value="1">+1</td>
+                                <td class="artist" data-value="Justin Bieber">Justin Bieber</td>
+                                <td class="num pts" data-value="1514">1514</td>
+                                <td class="num" data-value="632">632</td>
+                                <td class="num" data-value="649">649</td>
+                                <td class="num" data-value="100">100</td>
+                                <td class="num" data-value="58">58</td>
+                                <td class="num" data-value="34">34</td>
+                                <td class="num" data-value="41">41</td>
+                                <td class="country" data-value="Indonesia">Indonesia</td>
+                                <td class="num" data-value="146">146</td>
+                            </tr>
+                            <tr class="down">
+                                <td class="pos" data-value="18">18</td>
+                                <td class="chg down" data-value="-1">-1</td>
+                                <td class="artist" data-value="ADÉLA">ADÉLA</td>
+                                <td class="num pts" data-value="1491">1491</td>
+                                <td class="num" data-value="1009">1009</td>
+                                <td class="num" data-value="300">300</td>
+                                <td class="num" data-value="70">70</td>
+                                <td class="num" data-value="41">41</td>
+                                <td class="num" data-value="20">20</td>
+                                <td class="num" data-value="51">51</td>
+                                <td class="country" data-value="Slovakia">Slovakia</td>
+                                <td class="num" data-value="128">128</td>
+                            </tr>
+                            <tr class="same">
+                                <td class="pos" data-value="19">19</td>
+                                <td class="chg same" data-value="0">=</td>
+                                <td class="artist" data-value="Imael Angel">Imael Angel</td>
+                                <td class="num pts" data-value="1430">1430</td>
+                                <td class="num" data-value="371">371</td>
+                                <td class="num" data-value="76">76</td>
+                                <td class="num" data-value="599">599</td>
+                                <td class="num" data-value="34">34</td>
+                                <td class="num" data-value="349">349</td>
+                                <td class="num" data-value="1">1</td>
+                                <td class="country" data-value="Germany">Germany</td>
+                                <td class="num" data-value="86">86</td>
+                            </tr>
+                            <tr class="same">
+                                <td class="pos" data-value="20">20</td>
+                                <td class="chg same" data-value="0">=</td>
+                                <td class="artist" data-value="Ella Langley">Ella Langley</td>
+                                <td class="num pts" data-value="1307">1307</td>
+                                <td class="num" data-value="366">366</td>
+                                <td class="num" data-value="433">433</td>
+                                <td class="num" data-value="196">196</td>
+                                <td class="num" data-value="103">103</td>
+                                <td class="num" data-value="43">43</td>
+                                <td class="num" data-value="166">166</td>
+                                <td class="country" data-value="United States">United States</td>
+                                <td class="num" data-value="54">54</td>
+                            </tr>
+                            <tr class="up">
+                                <td class="pos" data-value="21">21</td>
+                                <td class="chg up" data-value="1">+1</td>
+                                <td class="artist" data-value="Anuel AA">Anuel AA</td>
+                                <td class="num pts" data-value="1293">1293</td>
+                                <td class="num" data-value="495">495</td>
+                                <td class="num" data-value="518">518</td>
+                                <td class="num" data-value="7">7</td>
+                                <td class="num" data-value="233">233</td>
+                                <td class="num" data-value="31">31</td>
+                                <td class="num" data-value="10">10</td>
+                                <td class="country" data-value="Chile">Chile</td>
+                                <td class="num" data-value="22">22</td>
+                            </tr>
+                            <tr class="down">
+                                <td class="pos" data-value="22">22</td>
+                                <td class="chg down" data-value="-1">-1</td>
+                                <td class="artist" data-value="Alex Warren">Alex Warren</td>
+                                <td class="num pts" data-value="1289">1289</td>
+                                <td class="num" data-value="361">361</td>
+                                <td class="num" data-value="623">623</td>
+                                <td class="num" data-value="134">134</td>
+                                <td class="num" data-value="74">74</td>
+                                <td class="num" data-value="45">45</td>
+                                <td class="num" data-value="51">51</td>
+                                <td class="country" data-value="Australia">Australia</td>
+                                <td class="num" data-value="84">84</td>
+                            </tr>
+                            <tr class="same">
+                                <td class="pos" data-value="23">23</td>
+                                <td class="chg same" data-value="0">=</td>
+                                <td class="artist" data-value="KATSEYE">KATSEYE</td>
+                                <td class="num pts" data-value="1185">1185</td>
+                                <td class="num" data-value="272">272</td>
+                                <td class="num" data-value="133">133</td>
+                                <td class="num" data-value="74">74</td>
+                                <td class="num" data-value="639">639</td>
+                                <td class="num" data-value="35">35</td>
+                                <td class="num" data-value="33">33</td>
+                                <td class="country" data-value="United Kingdom">United Kingdom</td>
+                                <td class="num" data-value="97">97</td>
+                            </tr>
+                            <tr class="same">
+                                <td class="pos" data-value="24">24</td>
+                                <td class="chg same" data-value="0">=</td>
+                                <td class="artist" data-value="Fuerza Regida">Fuerza Regida</td>
+                                <td class="num pts" data-value="1172">1172</td>
+                                <td class="num" data-value="511">511</td>
+                                <td class="num" data-value="540">540</td>
+                                <td class="num" data-value="6">6</td>
+                                <td class="num" data-value="79">79</td>
+                                <td class="num" data-value="8">8</td>
+                                <td class="num" data-value="29">29</td>
+                                <td class="country" data-value="Mexico">Mexico</td>
+                                <td class="num" data-value="22">22</td>
+                            </tr>
+                            <tr class="up">
+                                <td class="pos" data-value="25">25</td>
+                                <td class="chg up" data-value="1">+1</td>
+                                <td class="artist" data-value="Katy Perry">Katy Perry</td>
+                                <td class="num pts" data-value="1142">1142</td>
+                                <td class="num" data-value="205">205</td>
+                                <td class="num" data-value="772">772</td>
+                                <td class="num" data-value="27">27</td>
+                                <td class="num" data-value="107">107</td>
+                                <td class="num" data-value="17">17</td>
+                                <td class="num" data-value="15">15</td>
+                                <td class="country" data-value="Germany">Germany</td>
+                                <td class="num" data-value="114">114</td>
+                            </tr>
+                            <tr class="down">
+                                <td class="pos" data-value="26">26</td>
+                                <td class="chg down" data-value="-1">-1</td>
+                                <td class="artist" data-value="SIENNA SPIRO">SIENNA SPIRO</td>
+                                <td class="num pts" data-value="1142">1142</td>
+                                <td class="num" data-value="504">504</td>
+                                <td class="num" data-value="452">452</td>
+                                <td class="num" data-value="65">65</td>
+                                <td class="num" data-value="26">26</td>
+                                <td class="num" data-value="67">67</td>
+                                <td class="num" data-value="27">27</td>
+                                <td class="country" data-value="United Kingdom">United Kingdom</td>
+                                <td class="num" data-value="105">105</td>
+                            </tr>
+                            <tr class="up">
+                                <td class="pos" data-value="27">27</td>
+                                <td class="chg up" data-value="1">+1</td>
+                                <td class="artist" data-value="Mauvais Djo">Mauvais Djo</td>
+                                <td class="num pts" data-value="1125">1125</td>
+                                <td class="num" data-value="583">583</td>
+                                <td class="num" data-value="206">206</td>
+                                <td class="num" data-value="36">36</td>
+                                <td class="num" data-value="182">182</td>
+                                <td class="num" data-value="68">68</td>
+                                <td class="num" data-value="50">50</td>
+                                <td class="country" data-value="France">France</td>
+                                <td class="num" data-value="61">61</td>
+                            </tr>
+                            <tr class="up">
+                                <td class="pos" data-value="28">28</td>
+                                <td class="chg up" data-value="1">+1</td>
+                                <td class="artist" data-value="BLOK3">BLOK3</td>
+                                <td class="num pts" data-value="1041">1041</td>
+                                <td class="num" data-value="308">308</td>
+                                <td class="num" data-value="281">281</td>
+                                <td class="num" data-value="35">35</td>
+                                <td class="num" data-value="356">356</td>
+                                <td class="num" data-value="47">47</td>
+                                <td class="num" data-value="12">12</td>
+                                <td class="country" data-value="Turkey">Turkey</td>
+                                <td class="num" data-value="35">35</td>
+                            </tr>
+                            <tr class="up">
+                                <td class="pos" data-value="29">29</td>
+                                <td class="chg up" data-value="3">+3</td>
+                                <td class="artist" data-value="LINKIN PARK">LINKIN PARK</td>
+                                <td class="num pts" data-value="1038">1038</td>
+                                <td class="num" data-value="398">398</td>
+                                <td class="num" data-value="438">438</td>
+                                <td class="num" data-value="141">141</td>
+                                <td class="num" data-value="8">8</td>
+                                <td class="num" data-value="1">1</td>
+                                <td class="num" data-value="51">51</td>
+                                <td class="country" data-value="Germany">Germany</td>
+                                <td class="num" data-value="96">96</td>
+                            </tr>
+                            <tr class="down">
+                                <td class="pos" data-value="30">30</td>
+                                <td class="chg down" data-value="-3">-3</td>
+                                <td class="artist" data-value="Rihanna">Rihanna</td>
+                                <td class="num pts" data-value="1022">1022</td>
+                                <td class="num" data-value="401">401</td>
+                                <td class="num" data-value="492">492</td>
+                                <td class="num" data-value="77">77</td>
+                                <td class="num" data-value="14">14</td>
+                                <td class="num" data-value="26">26</td>
+                                <td class="num" data-value="12">12</td>
+                                <td class="country" data-value="Germany">Germany</td>
+                                <td class="num" data-value="143">143</td>
+                            </tr>
+                            <tr class="same">
+                                <td class="pos" data-value="31">31</td>
+                                <td class="chg same" data-value="0">=</td>
+                                <td class="artist" data-value="sombr">sombr</td>
+                                <td class="num pts" data-value="1021">1021</td>
+                                <td class="num" data-value="221">221</td>
+                                <td class="num" data-value="580">580</td>
+                                <td class="num" data-value="63">63</td>
+                                <td class="num" data-value="12">12</td>
+                                <td class="num" data-value="63">63</td>
+                                <td class="num" data-value="82">82</td>
+                                <td class="country" data-value="Australia">Australia</td>
+                                <td class="num" data-value="73">73</td>
+                            </tr>
+                            <tr class="down">
+                                <td class="pos" data-value="32">32</td>
+                                <td class="chg down" data-value="-2">-2</td>
+                                <td class="artist" data-value="Dolly Parton">Dolly Parton</td>
+                                <td class="num pts" data-value="1006">1006</td>
+                                <td class="num" data-value="117">117</td>
+                                <td class="num" data-value="167">167</td>
+                                <td class="num" data-value="316">316</td>
+                                <td class="num" data-value="315">315</td>
+                                <td class="num" data-value="88">88</td>
+                                <td class="num" data-value="4">4</td>
+                                <td class="country" data-value="United Kingdom">United Kingdom</td>
+                                <td class="num" data-value="50">50</td>
+                            </tr>
+                            <tr class="up">
+                                <td class="pos" data-value="33">33</td>
+                                <td class="chg up" data-value="1">+1</td>
+                                <td class="artist" data-value="Asake">Asake</td>
+                                <td class="num pts" data-value="912">912</td>
+                                <td class="num" data-value="754">754</td>
+                                <td class="num" data-value="95">95</td>
+                                <td class="num" data-value="6">6</td>
+                                <td class="num" data-value="25">25</td>
+                                <td class="num" data-value="15">15</td>
+                                <td class="num" data-value="17">17</td>
+                                <td class="country" data-value="Nigeria">Nigeria</td>
+                                <td class="num" data-value="59">59</td>
+                            </tr>
+                            <tr class="down">
+                                <td class="pos" data-value="34">34</td>
+                                <td class="chg down" data-value="-1">-1</td>
+                                <td class="artist" data-value="Lady Gaga">Lady Gaga</td>
+                                <td class="num pts" data-value="900">900</td>
+                                <td class="num" data-value="279">279</td>
+                                <td class="num" data-value="453">453</td>
+                                <td class="num" data-value="69">69</td>
+                                <td class="num" data-value="22">22</td>
+                                <td class="num" data-value="20">20</td>
+                                <td class="num" data-value="56">56</td>
+                                <td class="country" data-value="Australia">Australia</td>
+                                <td class="num" data-value="118">118</td>
+                            </tr>
+                            <tr class="same">
+                                <td class="pos" data-value="35">35</td>
+                                <td class="chg same" data-value="0">=</td>
+                                <td class="artist" data-value="Noah Kahan">Noah Kahan</td>
+                                <td class="num pts" data-value="897">897</td>
+                                <td class="num" data-value="363">363</td>
+                                <td class="num" data-value="484">484</td>
+                                <td class="num" data-value="19">19</td>
+                                <td class="num" data-value="3">3</td>
+                                <td class="num" data-value="5">5</td>
+                                <td class="num" data-value="22">22</td>
+                                <td class="country" data-value="Canada">Canada</td>
+                                <td class="num" data-value="59">59</td>
+                            </tr>
+                            <tr class="up">
+                                <td class="pos" data-value="36">36</td>
+                                <td class="chg up" data-value="1">+1</td>
+                                <td class="artist" data-value="Kanye West">Kanye West</td>
+                                <td class="num pts" data-value="858">858</td>
+                                <td class="num" data-value="619">619</td>
+                                <td class="num" data-value="166">166</td>
+                                <td class="num" data-value="53">53</td>
+                                <td class="num" data-value="0">0</td>
+                                <td class="num" data-value="12">12</td>
+                                <td class="num" data-value="7">7</td>
+                                <td class="country" data-value="United States">United States</td>
+                                <td class="num" data-value="132">132</td>
+                            </tr>
+                            <tr class="up">
+                                <td class="pos" data-value="37">37</td>
+                                <td class="chg up" data-value="1">+1</td>
+                                <td class="artist" data-value="Billie Eilish">Billie Eilish</td>
+                                <td class="num pts" data-value="849">849</td>
+                                <td class="num" data-value="562">562</td>
+                                <td class="num" data-value="188">188</td>
+                                <td class="num" data-value="33">33</td>
+                                <td class="num" data-value="0">0</td>
+                                <td class="num" data-value="5">5</td>
+                                <td class="num" data-value="61">61</td>
+                                <td class="country" data-value="Indonesia">Indonesia</td>
+                                <td class="num" data-value="125">125</td>
+                            </tr>
+                            <tr class="up">
+                                <td class="pos" data-value="38">38</td>
+                                <td class="chg up" data-value="1">+1</td>
+                                <td class="artist" data-value="JENNIE">JENNIE</td>
+                                <td class="num pts" data-value="840">840</td>
+                                <td class="num" data-value="429">429</td>
+                                <td class="num" data-value="101">101</td>
+                                <td class="num" data-value="88">88</td>
+                                <td class="num" data-value="155">155</td>
+                                <td class="num" data-value="27">27</td>
+                                <td class="num" data-value="41">41</td>
+                                <td class="country" data-value="Taiwan">Taiwan</td>
+                                <td class="num" data-value="85">85</td>
+                            </tr>
+                            <tr class="down">
+                                <td class="pos" data-value="39">39</td>
+                                <td class="chg down" data-value="-3">-3</td>
+                                <td class="artist" data-value="Burna Boy">Burna Boy</td>
+                                <td class="num pts" data-value="823">823</td>
+                                <td class="num" data-value="474">474</td>
+                                <td class="num" data-value="149">149</td>
+                                <td class="num" data-value="139">139</td>
+                                <td class="num" data-value="0">0</td>
+                                <td class="num" data-value="59">59</td>
+                                <td class="num" data-value="2">2</td>
+                                <td class="country" data-value="Nigeria">Nigeria</td>
+                                <td class="num" data-value="121">121</td>
+                            </tr>
+                            <tr class="up">
+                                <td class="pos" data-value="40">40</td>
+                                <td class="chg up" data-value="8">+8</td>
+                                <td class="artist" data-value="Harry Styles">Harry Styles</td>
+                                <td class="num pts" data-value="778">778</td>
+                                <td class="num" data-value="469">469</td>
+                                <td class="num" data-value="129">129</td>
+                                <td class="num" data-value="96">96</td>
+                                <td class="num" data-value="5">5</td>
+                                <td class="num" data-value="49">49</td>
+                                <td class="num" data-value="30">30</td>
+                                <td class="country" data-value="Ireland">Ireland</td>
+                                <td class="num" data-value="103">103</td>
+                            </tr>
+                            <tr class="down">
+                                <td class="pos" data-value="41">41</td>
+                                <td class="chg down" data-value="-1">-1</td>
+                                <td class="artist" data-value="Rauw Alejandro">Rauw Alejandro</td>
+                                <td class="num pts" data-value="772">772</td>
+                                <td class="num" data-value="431">431</td>
+                                <td class="num" data-value="281">281</td>
+                                <td class="num" data-value="3">3</td>
+                                <td class="num" data-value="49">49</td>
+                                <td class="num" data-value="4">4</td>
+                                <td class="num" data-value="5">5</td>
+                                <td class="country" data-value="Mexico">Mexico</td>
+                                <td class="num" data-value="21">21</td>
+                            </tr>
+                            <tr class="up">
+                                <td class="pos" data-value="42">42</td>
+                                <td class="chg up" data-value="1">+1</td>
+                                <td class="artist" data-value="Malie Donn">Malie Donn</td>
+                                <td class="num pts" data-value="766">766</td>
+                                <td class="num" data-value="678">678</td>
+                                <td class="num" data-value="0">0</td>
+                                <td class="num" data-value="21">21</td>
+                                <td class="num" data-value="61">61</td>
+                                <td class="num" data-value="0">0</td>
+                                <td class="num" data-value="6">6</td>
+                                <td class="country" data-value="Antigua and Barbuda">Antigua and Barbuda</td>
+                                <td class="num" data-value="23">23</td>
+                            </tr>
+                            <tr class="up">
+                                <td class="pos" data-value="43">43</td>
+                                <td class="chg up" data-value="1">+1</td>
+                                <td class="artist" data-value="Quevedo">Quevedo</td>
+                                <td class="num pts" data-value="739">739</td>
+                                <td class="num" data-value="227">227</td>
+                                <td class="num" data-value="405">405</td>
+                                <td class="num" data-value="10">10</td>
+                                <td class="num" data-value="58">58</td>
+                                <td class="num" data-value="14">14</td>
+                                <td class="num" data-value="25">25</td>
+                                <td class="country" data-value="Spain">Spain</td>
+                                <td class="num" data-value="21">21</td>
+                            </tr>
+                            <tr class="down">
+                                <td class="pos" data-value="44">44</td>
+                                <td class="chg down" data-value="-2">-2</td>
+                                <td class="artist" data-value="Ultra Naté">Ultra Naté</td>
+                                <td class="num pts" data-value="734">734</td>
+                                <td class="num" data-value="256">256</td>
+                                <td class="num" data-value="73">73</td>
+                                <td class="num" data-value="249">249</td>
+                                <td class="num" data-value="0">0</td>
+                                <td class="num" data-value="156">156</td>
+                                <td class="num" data-value="0">0</td>
+                                <td class="country" data-value="Germany">Germany</td>
+                                <td class="num" data-value="82">82</td>
+                            </tr>
+                            <tr class="down">
+                                <td class="pos" data-value="45">45</td>
+                                <td class="chg down" data-value="-4">-4</td>
+                                <td class="artist" data-value="Ed Sheeran">Ed Sheeran</td>
+                                <td class="num pts" data-value="724">724</td>
+                                <td class="num" data-value="427">427</td>
+                                <td class="num" data-value="129">129</td>
+                                <td class="num" data-value="140">140</td>
+                                <td class="num" data-value="4">4</td>
+                                <td class="num" data-value="13">13</td>
+                                <td class="num" data-value="11">11</td>
+                                <td class="country" data-value="Australia">Australia</td>
+                                <td class="num" data-value="126">126</td>
+                            </tr>
+                            <tr class="down">
+                                <td class="pos" data-value="46">46</td>
+                                <td class="chg down" data-value="-1">-1</td>
+                                <td class="artist" data-value="TUL8TE">TUL8TE</td>
+                                <td class="num pts" data-value="714">714</td>
+                                <td class="num" data-value="328">328</td>
+                                <td class="num" data-value="80">80</td>
+                                <td class="num" data-value="5">5</td>
+                                <td class="num" data-value="252">252</td>
+                                <td class="num" data-value="29">29</td>
+                                <td class="num" data-value="20">20</td>
+                                <td class="country" data-value="Egypt">Egypt</td>
+                                <td class="num" data-value="21">21</td>
+                            </tr>
+                            <tr class="up">
+                                <td class="pos" data-value="47">47</td>
+                                <td class="chg up" data-value="26">+26</td>
+                                <td class="artist" data-value="LISA">LISA</td>
+                                <td class="num pts" data-value="709">709</td>
+                                <td class="num" data-value="198">198</td>
+                                <td class="num" data-value="93">93</td>
+                                <td class="num" data-value="207">207</td>
+                                <td class="num" data-value="190">190</td>
+                                <td class="num" data-value="12">12</td>
+                                <td class="num" data-value="9">9</td>
+                                <td class="country" data-value="Thailand">Thailand</td>
+                                <td class="num" data-value="93">93</td>
+                            </tr>
+                            <tr class="down">
+                                <td class="pos" data-value="48">48</td>
+                                <td class="chg down" data-value="-1">-1</td>
+                                <td class="artist" data-value="Zara Larsson">Zara Larsson</td>
+                                <td class="num pts" data-value="686">686</td>
+                                <td class="num" data-value="186">186</td>
+                                <td class="num" data-value="304">304</td>
+                                <td class="num" data-value="27">27</td>
+                                <td class="num" data-value="90">90</td>
+                                <td class="num" data-value="11">11</td>
+                                <td class="num" data-value="68">68</td>
+                                <td class="country" data-value="Sweden">Sweden</td>
+                                <td class="num" data-value="69">69</td>
+                            </tr>
+                            <tr class="down">
+                                <td class="pos" data-value="49">49</td>
+                                <td class="chg down" data-value="-3">-3</td>
+                                <td class="artist" data-value="Ninho">Ninho</td>
+                                <td class="num pts" data-value="686">686</td>
+                                <td class="num" data-value="532">532</td>
+                                <td class="num" data-value="138">138</td>
+                                <td class="num" data-value="6">6</td>
+                                <td class="num" data-value="1">1</td>
+                                <td class="num" data-value="3">3</td>
+                                <td class="num" data-value="6">6</td>
+                                <td class="country" data-value="France">France</td>
+                                <td class="num" data-value="22">22</td>
+                            </tr>
+                            <tr class="down">
+                                <td class="pos" data-value="50">50</td>
+                                <td class="chg down" data-value="-1">-1</td>
+                                <td class="artist" data-value="Romeo Santos">Romeo Santos</td>
+                                <td class="num pts" data-value="680">680</td>
+                                <td class="num" data-value="176">176</td>
+                                <td class="num" data-value="312">312</td>
+                                <td class="num" data-value="19">19</td>
+                                <td class="num" data-value="162">162</td>
+                                <td class="num" data-value="7">7</td>
+                                <td class="num" data-value="3">3</td>
+                                <td class="country" data-value="Spain">Spain</td>
+                                <td class="num" data-value="23">23</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+
+            <footer class="home-footer">
+                <p>Kworb 2011–2026. Music data from Spotify, Apple Music, YouTube, iTunes, and more.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
