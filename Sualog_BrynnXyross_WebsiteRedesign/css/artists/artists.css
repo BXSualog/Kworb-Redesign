@@ -171,6 +171,23 @@
     background: #101510;
 }
 
+/* ── Table caption ──────────────────────────────── */
+.page-artists table caption,
+.page-artists-more table caption {
+    caption-side: top;
+    text-align: left;
+    padding: 14px 18px 13px;
+    background: linear-gradient(90deg, rgba(29,185,84,0.08) 0%, transparent 60%);
+    border-bottom: 1px solid #1D261F;
+    border-left: 3px solid #1DB954;
+    border-radius: 12px 12px 0 0;
+    color: #8B928C;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
 @media (max-width: 768px) {
     .page-artists .home-welcome h1 {
         font-size: 28px;
