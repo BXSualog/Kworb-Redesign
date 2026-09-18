@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Kworb</title>
+    <meta name="description" content="Spotify daily and weekly country charts, most streamed artists, monthly listeners, and all-time song totals on Kworb.">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/platforms/spotify.css">
+</head>
+<body class="page-spotify">
+    <div class="home-app" id="top">
+        <aside class="home-sidebar" id="site-nav">
+            <a class="home-logo" href="../../index.html">KWORB</a>
+            <nav aria-label="Kworb sections">
+                <div class="nav-group">
+                    <a class="nav-home" href="../home.html">Home</a>
+                </div>
+                <div class="nav-group">
+                    <p class="nav-label">Discover</p>
+                    <a class="nav-charts" href="../discover/charts.html">Charts</a>
+                    <a class="nav-worldwide" href="../discover/worldwide.html">Worldwide</a>
+                    <a class="nav-trending" href="../discover/trending.html">Trending</a>
+                    <a class="nav-radio" href="../discover/radio.html">Radio</a>
+                </div>
+                <div class="nav-group">
+                    <p class="nav-label">Platforms</p>
+                    <a class="nav-spotify is-active" href="../platforms/spotify.html">Spotify</a>
+                    <a class="nav-itunes" href="../platforms/itunes.html">iTunes</a>
+                    <a class="nav-youtube" href="../platforms/youtube.html">YouTube</a>
+                </div>
+                <div class="nav-group">
+                    <p class="nav-label">Artists</p>
+                    <a class="nav-artists" href="../artists/artists.html">Artists</a>
+                </div>
+            </nav>
+        </aside>
+
+        <div class="home-stage">
+            <input class="nav-check" type="checkbox" id="nav-open" aria-label="Open menu">
+            <label class="nav-backdrop" for="nav-open">
+                <span class="visually-hidden">Close menu</span>
+            </label>
+            <header class="home-top">
+                <label class="nav-toggle" for="nav-open">
+                    <span class="visually-hidden">Menu</span>
+                    <span class="nav-toggle-bars" aria-hidden="true"></span>
+                </label>
+                <label class="home-search">
+                    <span class="visually-hidden">Search</span>
+                    <input type="search" name="q" placeholder="Search artist, song, album..." autocomplete="off">
+                </label>
+                <a class="home-back" href="../../index.html">Back to top</a>
+            </header>
+
+            <main class="home-content">
+                <section class="home-welcome">
+                    <p class="eyebrow">Spotify</p>
+                    <h1>Spotify Charts</h1>
+                    <p class="section-lead">Aggregates of all daily and weekly charts provided by Spotify.</p>
+                </section>
+
+                <div class="spotify-switcher">
+                        <input type="radio" name="sp-tab" id="sp-countries" checked>
+                        <input type="radio" name="sp-tab" id="sp-artists">
+                        <input type="radio" name="sp-tab" id="sp-listeners">
+                        <input type="radio" name="sp-tab" id="sp-toplists">
+
+                        <div class="spotify-tabs" role="tablist" aria-label="Spotify views">
+                            <label for="sp-countries">Countries</label>
+                            <label for="sp-artists">Artists</label>
+                            <label for="sp-listeners">Listeners</label>
+                            <label for="sp-toplists">Top Lists</label>
+                        </div>
+
+                        <div class="spotify-panels">
+                            <section class="sp-panel sp-countries">
+                                <p class="sp-kicker">Daily and weekly totals for every Spotify chart market.</p>
+                                <div class="country-directory">
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-featured">Featured</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Global</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>United States</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>United Kingdom</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-a">A</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Andorra</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Argentina</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Australia</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Austria</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-b">B</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Belarus</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Belgium</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Bolivia</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Brazil</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Bulgaria</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-c">C</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Canada</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Chile</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Colombia</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Costa Rica</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Cyprus</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Czech Republic</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-d">D</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Denmark</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Dominican Republic</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-e">E</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Ecuador</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Egypt</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>El Salvador</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Estonia</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-f">F</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Finland</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>France</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-g">G</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Germany</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Greece</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Guatemala</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-h">H</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Honduras</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Hong Kong</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Hungary</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-i">I</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Iceland</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>India</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Indonesia</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Ireland</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Israel</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Italy</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-j">J</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Japan</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-k">K</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Kazakhstan</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-l">L</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Latvia</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Lithuania</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Luxembourg</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-m">M</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Malaysia</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Malta</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Mexico</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Morocco</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-n">N</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Netherlands</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>New Zealand</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Nicaragua</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Nigeria</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Norway</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-p">P</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Pakistan</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Panama</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Paraguay</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Peru</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Philippines</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Poland</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Portugal</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-r">R</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Romania</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Russia</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-s">S</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Saudi Arabia</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Singapore</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Slovakia</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>South Africa</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>South Korea</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Spain</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Sweden</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Switzerland</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-t">T</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Taiwan</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Thailand</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Turkey</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-u">U</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Ukraine</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>United Arab Emirates</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Uruguay</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="letter-group">
+                                        <div class="letter-head" id="letter-v">V</div>
+                                        <div class="letter-rows">
+                                            <div class="country-row"><strong>Venezuela</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                            <div class="country-row"><strong>Vietnam</strong><span class="chart-links"><span>Daily (Totals)</span><span class="sep">|</span><span>Weekly (Totals)</span></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section class="sp-panel sp-artists">
+                                <h3>Most streamed artists of all time</h3>
+                                <p class="sp-kicker">Totals in millions of streams. Section still under construction; glitches may be present in the data.</p>
+                                <div class="table-wrap">
+                                    <table class="artists-table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Artist</th>
+                                                <th class="num">Streams</th>
+                                                <th class="num">Daily</th>
+                                                <th class="num">As lead</th>
+                                                <th class="num">Solo</th>
+                                                <th class="num">As feature</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Drake</td>
+                                    <td class="num">140,825.2</td>
+                                    <td class="num">57.696</td>
+                                    <td class="num">97,088.1</td>
+                                    <td class="num">54,743.7</td>
+                                    <td class="num">43,737.1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Taylor Swift</td>
+                                    <td class="num">130,262.5</td>
+                                    <td class="num">45.423</td>
+                                    <td class="num">126,353.6</td>
+                                    <td class="num">115,612.8</td>
+                                    <td class="num">3,908.9</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Bad Bunny</td>
+                                    <td class="num">129,385.7</td>
+                                    <td class="num">54.467</td>
+                                    <td class="num">84,252.4</td>
+                                    <td class="num">50,258.1</td>
+                                    <td class="num">45,133.4</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>The Weeknd</td>
+                                    <td class="num">97,769.2</td>
+                                    <td class="num">38.222</td>
+                                    <td class="num">78,803.1</td>
+                                    <td class="num">52,016.1</td>
+                                    <td class="num">18,966.0</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Justin Bieber</td>
+                                    <td class="num">79,950.4</td>
+                                    <td class="num">32.669</td>
+                                    <td class="num">49,751.5</td>
+                                    <td class="num">30,553.5</td>
+                                    <td class="num">30,198.9</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Ariana Grande</td>
+                                    <td class="num">70,510.6</td>
+                                    <td class="num">35.361</td>
+                                    <td class="num">59,129.0</td>
+                                    <td class="num">43,122.1</td>
+                                    <td class="num">11,381.6</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Kanye West</td>
+                                    <td class="num">66,564.0</td>
+                                    <td class="num">27.061</td>
+                                    <td class="num">47,498.9</td>
+                                    <td class="num">28,959.6</td>
+                                    <td class="num">19,065.0</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Travis Scott</td>
+                                    <td class="num">66,327.8</td>
+                                    <td class="num">19.755</td>
+                                    <td class="num">35,875.3</td>
+                                    <td class="num">25,682.2</td>
+                                    <td class="num">30,452.5</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Eminem</td>
+                                    <td class="num">65,713.1</td>
+                                    <td class="num">18.556</td>
+                                    <td class="num">55,238.6</td>
+                                    <td class="num">33,400.5</td>
+                                    <td class="num">10,474.5</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Ed Sheeran</td>
+                                    <td class="num">65,462.5</td>
+                                    <td class="num">14.231</td>
+                                    <td class="num">58,366.7</td>
+                                    <td class="num">47,286.3</td>
+                                    <td class="num">7,095.8</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Rihanna</td>
+                                    <td class="num">62,251.8</td>
+                                    <td class="num">29.302</td>
+                                    <td class="num">46,059.6</td>
+                                    <td class="num">31,138.5</td>
+                                    <td class="num">16,192.3</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>Billie Eilish</td>
+                                    <td class="num">58,973.7</td>
+                                    <td class="num">17.545</td>
+                                    <td class="num">58,063.8</td>
+                                    <td class="num">52,409.6</td>
+                                    <td class="num">909.9</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>Bruno Mars</td>
+                                    <td class="num">58,451.2</td>
+                                    <td class="num">33.564</td>
+                                    <td class="num">41,966.1</td>
+                                    <td class="num">34,727.2</td>
+                                    <td class="num">16,485.1</td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td>Kendrick Lamar</td>
+                                    <td class="num">57,390.1</td>
+                                    <td class="num">16.496</td>
+                                    <td class="num">41,414.3</td>
+                                    <td class="num">23,707.4</td>
+                                    <td class="num">15,975.9</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>Post Malone</td>
+                                    <td class="num">55,786.0</td>
+                                    <td class="num">14.208</td>
+                                    <td class="num">49,466.2</td>
+                                    <td class="num">25,694.0</td>
+                                    <td class="num">6,319.8</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>J Balvin</td>
+                                    <td class="num">55,401.3</td>
+                                    <td class="num">17.215</td>
+                                    <td class="num">25,790.3</td>
+                                    <td class="num">7,987.0</td>
+                                    <td class="num">29,611.0</td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td>Future</td>
+                                    <td class="num">55,056.1</td>
+                                    <td class="num">18.752</td>
+                                    <td class="num">28,412.4</td>
+                                    <td class="num">12,973.4</td>
+                                    <td class="num">26,643.7</td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td>BTS</td>
+                                    <td class="num">55,017.0</td>
+                                    <td class="num">31.004</td>
+                                    <td class="num">49,609.3</td>
+                                    <td class="num">45,708.8</td>
+                                    <td class="num">5,407.8</td>
+                                </tr>
+                                <tr>
+                                    <td>19</td>
+                                    <td>Ozuna</td>
+                                    <td class="num">48,766.7</td>
+                                    <td class="num">18.789</td>
+                                    <td class="num">20,810.8</td>
+                                    <td class="num">8,856.5</td>
+                                    <td class="num">27,955.9</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>Coldplay</td>
+                                    <td class="num">47,649.4</td>
+                                    <td class="num">17.690</td>
+                                    <td class="num">43,680.4</td>
+                                    <td class="num">39,334.0</td>
+                                    <td class="num">3,969.0</td>
+                                </tr>
+                                <tr>
+                                    <td>21</td>
+                                    <td>Juice WRLD</td>
+                                    <td class="num">46,946.1</td>
+                                    <td class="num">10.810</td>
+                                    <td class="num">34,559.8</td>
+                                    <td class="num">27,023.1</td>
+                                    <td class="num">12,386.3</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>Chris Brown</td>
+                                    <td class="num">44,905.5</td>
+                                    <td class="num">15.231</td>
+                                    <td class="num">24,930.9</td>
+                                    <td class="num">12,468.2</td>
+                                    <td class="num">19,974.6</td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td>David Guetta</td>
+                                    <td class="num">44,562.6</td>
+                                    <td class="num">16.243</td>
+                                    <td class="num">32,992.8</td>
+                                    <td class="num">415.9</td>
+                                    <td class="num">11,569.7</td>
+                                </tr>
+                                <tr>
+                                    <td>24</td>
+                                    <td>Nicki Minaj</td>
+                                    <td class="num">44,061.2</td>
+                                    <td class="num">12.973</td>
+                                    <td class="num">16,524.0</td>
+                                    <td class="num">9,760.0</td>
+                                    <td class="num">27,537.3</td>
+                                </tr>
+                                <tr>
+                                    <td>25</td>
+                                    <td>Lana Del Rey</td>
+                                    <td class="num">43,505.5</td>
+                                    <td class="num">20.414</td>
+                                    <td class="num">39,434.2</td>
+                                    <td class="num">35,454.4</td>
+                                    <td class="num">4,071.3</td>
+                                </tr>
+                                <tr>
+                                    <td>26</td>
+                                    <td>Dua Lipa</td>
+                                    <td class="num">42,772.5</td>
+                                    <td class="num">16.186</td>
+                                    <td class="num">28,804.7</td>
+                                    <td class="num">23,645.7</td>
+                                    <td class="num">13,967.9</td>
+                                </tr>
+                                <tr>
+                                    <td>27</td>
+                                    <td>Daddy Yankee</td>
+                                    <td class="num">42,249.7</td>
+                                    <td class="num">15.871</td>
+                                    <td class="num">20,165.7</td>
+                                    <td class="num">10,953.5</td>
+                                    <td class="num">22,084.1</td>
+                                </tr>
+                                <tr>
+                                    <td>28</td>
+                                    <td>Rauw Alejandro</td>
+                                    <td class="num">41,633.3</td>
+                                    <td class="num">17.822</td>
+                                    <td class="num">25,450.5</td>
+                                    <td class="num">10,683.9</td>
+                                    <td class="num">16,182.8</td>
+                                </tr>
+                                <tr>
+                                    <td>29</td>
+                                    <td>Anuel AA</td>
+                                    <td class="num">41,571.2</td>
+                                    <td class="num">21.696</td>
+                                    <td class="num">18,867.8</td>
+                                    <td class="num">6,441.8</td>
+                                    <td class="num">22,703.4</td>
+                                </tr>
+                                <tr>
+                                    <td>30</td>
+                                    <td>Lil Wayne</td>
+                                    <td class="num">40,876.3</td>
+                                    <td class="num">13.952</td>
+                                    <td class="num">16,438.3</td>
+                                    <td class="num">4,125.2</td>
+                                    <td class="num">24,438.0</td>
+                                </tr>
+                                <tr>
+                                    <td>31</td>
+                                    <td>Imagine Dragons</td>
+                                    <td class="num">40,816.8</td>
+                                    <td class="num">9.760</td>
+                                    <td class="num">38,507.6</td>
+                                    <td class="num">34,332.4</td>
+                                    <td class="num">2,309.2</td>
+                                </tr>
+                                <tr>
+                                    <td>32</td>
+                                    <td>XXXTENTACION</td>
+                                    <td class="num">40,810.1</td>
+                                    <td class="num">7.513</td>
+                                    <td class="num">34,807.4</td>
+                                    <td class="num">28,396.1</td>
+                                    <td class="num">6,002.6</td>
+                                </tr>
+                                <tr>
+                                    <td>33</td>
+                                    <td>SZA</td>
+                                    <td class="num">39,652.3</td>
+                                    <td class="num">14.660</td>
+                                    <td class="num">25,726.3</td>
+                                    <td class="num">20,186.0</td>
+                                    <td class="num">13,926.0</td>
+                                </tr>
+                                <tr>
+                                    <td>34</td>
+                                    <td>21 Savage</td>
+                                    <td class="num">39,512.7</td>
+                                    <td class="num">9.468</td>
+                                    <td class="num">16,049.6</td>
+                                    <td class="num">7,965.4</td>
+                                    <td class="num">23,463.1</td>
+                                </tr>
+                                <tr>
+                                    <td>35</td>
+                                    <td>Arijit Singh</td>
+                                    <td class="num">39,013.6</td>
+                                    <td class="num">24.343</td>
+                                    <td class="num">13,783.5</td>
+                                    <td class="num">4,646.4</td>
+                                    <td class="num">25,230.1</td>
+                                </tr>
+                                <tr>
+                                    <td>36</td>
+                                    <td>KAROL G</td>
+                                    <td class="num">38,827.0</td>
+                                    <td class="num">29.486</td>
+                                    <td class="num">30,726.0</td>
+                                    <td class="num">15,388.3</td>
+                                    <td class="num">8,101.0</td>
+                                </tr>
+                                <tr>
+                                    <td>37</td>
+                                    <td>Lady Gaga</td>
+                                    <td class="num">38,369.7</td>
+                                    <td class="num">16.857</td>
+                                    <td class="num">37,791.0</td>
+                                    <td class="num">24,091.7</td>
+                                    <td class="num">578.6</td>
+                                </tr>
+                                <tr>
+                                    <td>38</td>
+                                    <td>Lil Baby</td>
+                                    <td class="num">36,562.5</td>
+                                    <td class="num">11.613</td>
+                                    <td class="num">19,150.0</td>
+                                    <td class="num">9,154.5</td>
+                                    <td class="num">17,412.5</td>
+                                </tr>
+                                <tr>
+                                    <td>39</td>
+                                    <td>Maroon 5</td>
+                                    <td class="num">36,534.1</td>
+                                    <td class="num">13.958</td>
+                                    <td class="num">36,310.7</td>
+                                    <td class="num">23,812.5</td>
+                                    <td class="num">223.4</td>
+                                </tr>
+                                <tr>
+                                    <td>40</td>
+                                    <td>Khalid</td>
+                                    <td class="num">36,129.4</td>
+                                    <td class="num">7.079</td>
+                                    <td class="num">18,681.4</td>
+                                    <td class="num">12,662.6</td>
+                                    <td class="num">17,448.0</td>
+                                </tr>
+                                <tr>
+                                    <td>41</td>
+                                    <td>Beyonc�</td>
+                                    <td class="num">35,674.3</td>
+                                    <td class="num">13.900</td>
+                                    <td class="num">30,255.9</td>
+                                    <td class="num">22,289.5</td>
+                                    <td class="num">5,418.4</td>
+                                </tr>
+                                <tr>
+                                    <td>42</td>
+                                    <td>Maluma</td>
+                                    <td class="num">35,505.0</td>
+                                    <td class="num">12.802</td>
+                                    <td class="num">19,829.6</td>
+                                    <td class="num">11,873.7</td>
+                                    <td class="num">15,675.4</td>
+                                </tr>
+                                <tr>
+                                    <td>43</td>
+                                    <td>Feid</td>
+                                    <td class="num">35,239.4</td>
+                                    <td class="num">13.765</td>
+                                    <td class="num">19,131.1</td>
+                                    <td class="num">10,094.3</td>
+                                    <td class="num">16,108.3</td>
+                                </tr>
+                                <tr>
+                                    <td>44</td>
+                                    <td>Calvin Harris</td>
+                                    <td class="num">34,874.5</td>
+                                    <td class="num">13.787</td>
+                                    <td class="num">32,542.0</td>
+                                    <td class="num">6,163.9</td>
+                                    <td class="num">2,332.5</td>
+                                </tr>
+                                <tr>
+                                    <td>45</td>
+                                    <td>Myke Towers</td>
+                                    <td class="num">34,423.7</td>
+                                    <td class="num">16.392</td>
+                                    <td class="num">14,413.5</td>
+                                    <td class="num">9,661.4</td>
+                                    <td class="num">20,010.2</td>
+                                </tr>
+                                <tr>
+                                    <td>46</td>
+                                    <td>Peso Pluma</td>
+                                    <td class="num">34,342.8</td>
+                                    <td class="num">17.898</td>
+                                    <td class="num">19,341.2</td>
+                                    <td class="num">4,039.1</td>
+                                    <td class="num">15,001.5</td>
+                                </tr>
+                                <tr>
+                                    <td>47</td>
+                                    <td>Linkin Park</td>
+                                    <td class="num">34,227.6</td>
+                                    <td class="num">19.972</td>
+                                    <td class="num">32,399.1</td>
+                                    <td class="num">31,110.7</td>
+                                    <td class="num">1,828.5</td>
+                                </tr>
+                                <tr>
+                                    <td>48</td>
+                                    <td>J. Cole</td>
+                                    <td class="num">32,628.4</td>
+                                    <td class="num">10.122</td>
+                                    <td class="num">24,730.6</td>
+                                    <td class="num">19,294.4</td>
+                                    <td class="num">7,897.8</td>
+                                </tr>
+                                <tr>
+                                    <td>49</td>
+                                    <td>Lil Uzi Vert</td>
+                                    <td class="num">32,600.7</td>
+                                    <td class="num">9.088</td>
+                                    <td class="num">21,466.8</td>
+                                    <td class="num">17,096.1</td>
+                                    <td class="num">11,133.9</td>
+                                </tr>
+                                <tr>
+                                    <td>50</td>
+                                    <td>Shakira</td>
+                                    <td class="num">32,315.5</td>
+                                    <td class="num">16.946</td>
+                                    <td class="num">24,926.2</td>
+                                    <td class="num">11,957.1</td>
+                                    <td class="num">7,389.3</td>
+                                </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+
+                            <section class="sp-panel sp-listeners">
+                                <h3>Top artists by monthly listeners</h3>
+                                <p class="sp-kicker">Statistics since March 1st 2023. Showing 1�51 of 2500.</p>
+                                <div class="table-wrap">
+                                    <table class="listeners-table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Artist</th>
+                                                <th class="num">Listeners</th>
+                                                <th class="num">Daily +/-</th>
+                                                <th class="num">Peak</th>
+                                                <th class="num">PkListeners</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Bruno Mars</td>
+                                    <td class="num">132,590,800</td>
+                                    <td class="num loss">-233,517</td>
+                                    <td class="num">1</td>
+                                    <td class="num">151,079,821</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Justin Bieber</td>
+                                    <td class="num">117,929,365</td>
+                                    <td class="num loss">-205,084</td>
+                                    <td class="num">1</td>
+                                    <td class="num">146,972,758</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Rihanna</td>
+                                    <td class="num">116,543,010</td>
+                                    <td class="num loss">-3,394</td>
+                                    <td class="num">2</td>
+                                    <td class="num">116,557,491</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>The Weeknd</td>
+                                    <td class="num">114,632,348</td>
+                                    <td class="num loss">-84,827</td>
+                                    <td class="num">1</td>
+                                    <td class="num">126,192,069</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Taylor Swift</td>
+                                    <td class="num">100,781,820</td>
+                                    <td class="num loss">-86,757</td>
+                                    <td class="num">1</td>
+                                    <td class="num">116,229,071</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Lady Gaga</td>
+                                    <td class="num">99,257,250</td>
+                                    <td class="num loss">-162,951</td>
+                                    <td class="num">2</td>
+                                    <td class="num">124,637,761</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Shakira</td>
+                                    <td class="num">98,115,841</td>
+                                    <td class="num loss">-339,508</td>
+                                    <td class="num">3</td>
+                                    <td class="num">107,041,736</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Bad Bunny</td>
+                                    <td class="num">97,284,992</td>
+                                    <td class="num loss">-81,711</td>
+                                    <td class="num">2</td>
+                                    <td class="num">123,934,765</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Ariana Grande</td>
+                                    <td class="num">96,539,567</td>
+                                    <td class="num loss">-345,191</td>
+                                    <td class="num">1</td>
+                                    <td class="num">126,970,279</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Drake</td>
+                                    <td class="num">95,702,010</td>
+                                    <td class="num loss">-43,225</td>
+                                    <td class="num">3</td>
+                                    <td class="num">100,057,064</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Coldplay</td>
+                                    <td class="num">94,069,637</td>
+                                    <td class="num up">+106,067</td>
+                                    <td class="num">4</td>
+                                    <td class="num">101,505,654</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>Michael Jackson</td>
+                                    <td class="num">92,046,115</td>
+                                    <td class="num loss">-179,458</td>
+                                    <td class="num">4</td>
+                                    <td class="num">113,091,027</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>Katy Perry</td>
+                                    <td class="num">91,317,682</td>
+                                    <td class="num up">+7,967</td>
+                                    <td class="num">13</td>
+                                    <td class="num">91,425,279</td>
+                                </tr>
+                                <tr>
+                                    <td>14</td>
+                                    <td>David Guetta</td>
+                                    <td class="num">85,465,702</td>
+                                    <td class="num loss">-63,785</td>
+                                    <td class="num">4</td>
+                                    <td class="num">89,315,609</td>
+                                </tr>
+                                <tr>
+                                    <td>15</td>
+                                    <td>Pitbull</td>
+                                    <td class="num">82,918,115</td>
+                                    <td class="num loss">-123,375</td>
+                                    <td class="num">13</td>
+                                    <td class="num">89,612,836</td>
+                                </tr>
+                                <tr>
+                                    <td>16</td>
+                                    <td>Maroon 5</td>
+                                    <td class="num">80,856,076</td>
+                                    <td class="num loss">-89,982</td>
+                                    <td class="num">14</td>
+                                    <td class="num">81,038,545</td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td>Ed Sheeran</td>
+                                    <td class="num">80,803,576</td>
+                                    <td class="num up">+119,822</td>
+                                    <td class="num">2</td>
+                                    <td class="num">102,809,026</td>
+                                </tr>
+                                <tr>
+                                    <td>18</td>
+                                    <td>Calvin Harris</td>
+                                    <td class="num">79,806,138</td>
+                                    <td class="num loss">-28,314</td>
+                                    <td class="num">13</td>
+                                    <td class="num">81,341,228</td>
+                                </tr>
+                                <tr>
+                                    <td>19</td>
+                                    <td>Billie Eilish</td>
+                                    <td class="num">77,893,554</td>
+                                    <td class="num loss">-143,318</td>
+                                    <td class="num">1</td>
+                                    <td class="num">108,297,865</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>Dua Lipa</td>
+                                    <td class="num">74,417,539</td>
+                                    <td class="num up">+293,005</td>
+                                    <td class="num">3</td>
+                                    <td class="num">78,673,675</td>
+                                </tr>
+                                <tr>
+                                    <td>21</td>
+                                    <td>Eminem</td>
+                                    <td class="num">73,019,864</td>
+                                    <td class="num up">+82,784</td>
+                                    <td class="num">5</td>
+                                    <td class="num">86,389,533</td>
+                                </tr>
+                                <tr>
+                                    <td>22</td>
+                                    <td>Post Malone</td>
+                                    <td class="num">72,824,804</td>
+                                    <td class="num loss">-1,029</td>
+                                    <td class="num">3</td>
+                                    <td class="num">98,466,468</td>
+                                </tr>
+                                <tr>
+                                    <td>23</td>
+                                    <td>J Balvin</td>
+                                    <td class="num">72,474,540</td>
+                                    <td class="num loss">-153,951</td>
+                                    <td class="num">11</td>
+                                    <td class="num">85,751,171</td>
+                                </tr>
+                                <tr>
+                                    <td>24</td>
+                                    <td>Kanye West</td>
+                                    <td class="num">70,444,656</td>
+                                    <td class="num up">+14,472</td>
+                                    <td class="num">6</td>
+                                    <td class="num">78,581,428</td>
+                                </tr>
+                                <tr>
+                                    <td>25</td>
+                                    <td>Sia</td>
+                                    <td class="num">69,771,707</td>
+                                    <td class="num loss">-12,750</td>
+                                    <td class="num">8</td>
+                                    <td class="num">100,120,416</td>
+                                </tr>
+                                <tr>
+                                    <td>26</td>
+                                    <td>Kendrick Lamar</td>
+                                    <td class="num">69,188,817</td>
+                                    <td class="num loss">-124,649</td>
+                                    <td class="num">4</td>
+                                    <td class="num">112,091,210</td>
+                                </tr>
+                                <tr>
+                                    <td>27</td>
+                                    <td>Black Eyed Peas</td>
+                                    <td class="num">67,617,441</td>
+                                    <td class="num loss">-54,339</td>
+                                    <td class="num">26</td>
+                                    <td class="num">67,671,780</td>
+                                </tr>
+                                <tr>
+                                    <td>28</td>
+                                    <td>Beyonc�</td>
+                                    <td class="num">67,574,688</td>
+                                    <td class="num up">+15,860</td>
+                                    <td class="num">6</td>
+                                    <td class="num">78,122,541</td>
+                                </tr>
+                                <tr>
+                                    <td>29</td>
+                                    <td>Olivia Rodrigo</td>
+                                    <td class="num">67,128,975</td>
+                                    <td class="num up">+73,891</td>
+                                    <td class="num">18</td>
+                                    <td class="num">71,483,355</td>
+                                </tr>
+                                <tr>
+                                    <td>30</td>
+                                    <td>SZA</td>
+                                    <td class="num">65,598,115</td>
+                                    <td class="num loss">-59,134</td>
+                                    <td class="num">6</td>
+                                    <td class="num">97,852,020</td>
+                                </tr>
+                                <tr>
+                                    <td>31</td>
+                                    <td>KAROL G <span class="peak-now">Peak</span></td>
+                                    <td class="num">65,525,732</td>
+                                    <td class="num up">+176,523</td>
+                                    <td class="num">21</td>
+                                    <td class="num">65,525,732</td>
+                                </tr>
+                                <tr>
+                                    <td>32</td>
+                                    <td>Lana Del Rey</td>
+                                    <td class="num">65,093,386</td>
+                                    <td class="num loss">-24,247</td>
+                                    <td class="num">22</td>
+                                    <td class="num">66,553,669</td>
+                                </tr>
+                                <tr>
+                                    <td>33</td>
+                                    <td>Daddy Yankee</td>
+                                    <td class="num">64,985,591</td>
+                                    <td class="num loss">-66,668</td>
+                                    <td class="num">22</td>
+                                    <td class="num">66,859,292</td>
+                                </tr>
+                                <tr>
+                                    <td>34</td>
+                                    <td>Harry Styles</td>
+                                    <td class="num">64,386,892</td>
+                                    <td class="num loss">-82,163</td>
+                                    <td class="num">13</td>
+                                    <td class="num">72,497,079</td>
+                                </tr>
+                                <tr>
+                                    <td>35</td>
+                                    <td>Tame Impala</td>
+                                    <td class="num">63,916,036</td>
+                                    <td class="num loss">-25,456</td>
+                                    <td class="num">31</td>
+                                    <td class="num">64,654,298</td>
+                                </tr>
+                                <tr>
+                                    <td>36</td>
+                                    <td>Sean Paul</td>
+                                    <td class="num">60,933,532</td>
+                                    <td class="num loss">-94,087</td>
+                                    <td class="num">31</td>
+                                    <td class="num">64,638,835</td>
+                                </tr>
+                                <tr>
+                                    <td>37</td>
+                                    <td>Miley Cyrus</td>
+                                    <td class="num">60,768,349</td>
+                                    <td class="num up">+230,706</td>
+                                    <td class="num">2</td>
+                                    <td class="num">84,140,935</td>
+                                </tr>
+                                <tr>
+                                    <td>38</td>
+                                    <td>Travis Scott</td>
+                                    <td class="num">59,421,153</td>
+                                    <td class="num up">+44,407</td>
+                                    <td class="num">6</td>
+                                    <td class="num">75,557,671</td>
+                                </tr>
+                                <tr>
+                                    <td>39</td>
+                                    <td>Justin Timberlake <span class="peak-now">Peak</span></td>
+                                    <td class="num">59,319,548</td>
+                                    <td class="num up">+55,666</td>
+                                    <td class="num">38</td>
+                                    <td class="num">59,319,548</td>
+                                </tr>
+                                <tr>
+                                    <td>40</td>
+                                    <td>Adele</td>
+                                    <td class="num">59,158,865</td>
+                                    <td class="num up">+27,994</td>
+                                    <td class="num">23</td>
+                                    <td class="num">62,764,213</td>
+                                </tr>
+                                <tr>
+                                    <td>41</td>
+                                    <td>Shawn Mendes</td>
+                                    <td class="num">58,743,185</td>
+                                    <td class="num loss">-50,772</td>
+                                    <td class="num">40</td>
+                                    <td class="num">58,793,957</td>
+                                </tr>
+                                <tr>
+                                    <td>42</td>
+                                    <td>Zara Larsson</td>
+                                    <td class="num">57,820,828</td>
+                                    <td class="num loss">-167,474</td>
+                                    <td class="num">23</td>
+                                    <td class="num">71,288,935</td>
+                                </tr>
+                                <tr>
+                                    <td>43</td>
+                                    <td>Linkin Park</td>
+                                    <td class="num">56,975,161</td>
+                                    <td class="num loss">-26,916</td>
+                                    <td class="num">29</td>
+                                    <td class="num">60,369,972</td>
+                                </tr>
+                                <tr>
+                                    <td>44</td>
+                                    <td>Chris Brown</td>
+                                    <td class="num">56,652,105</td>
+                                    <td class="num loss">-56,381</td>
+                                    <td class="num">25</td>
+                                    <td class="num">64,080,293</td>
+                                </tr>
+                                <tr>
+                                    <td>45</td>
+                                    <td>Marshmello</td>
+                                    <td class="num">56,066,383</td>
+                                    <td class="num up">+6,758</td>
+                                    <td class="num">11</td>
+                                    <td class="num">68,947,085</td>
+                                </tr>
+                                <tr>
+                                    <td>46</td>
+                                    <td>Arctic Monkeys</td>
+                                    <td class="num">55,976,665</td>
+                                    <td class="num loss">-6,109</td>
+                                    <td class="num">36</td>
+                                    <td class="num">56,618,863</td>
+                                </tr>
+                                <tr>
+                                    <td>47</td>
+                                    <td>Sabrina Carpenter</td>
+                                    <td class="num">55,913,605</td>
+                                    <td class="num loss">-114,295</td>
+                                    <td class="num">4</td>
+                                    <td class="num">90,844,193</td>
+                                </tr>
+                                <tr>
+                                    <td>48</td>
+                                    <td>Sam Smith</td>
+                                    <td class="num">55,876,991</td>
+                                    <td class="num loss">-212,433</td>
+                                    <td class="num">7</td>
+                                    <td class="num">73,972,799</td>
+                                </tr>
+                                <tr>
+                                    <td>49</td>
+                                    <td>Shreya Ghoshal <span class="peak-now">Peak</span></td>
+                                    <td class="num">55,339,112</td>
+                                    <td class="num up">+63,535</td>
+                                    <td class="num">48</td>
+                                    <td class="num">55,339,112</td>
+                                </tr>
+                                <tr>
+                                    <td>50</td>
+                                    <td>Ellie Goulding <span class="peak-now">Peak</span></td>
+                                    <td class="num">55,323,371</td>
+                                    <td class="num up">+68,546</td>
+                                    <td class="num">50</td>
+                                    <td class="num">55,323,371</td>
+                                </tr>
+                                <tr>
+                                    <td>51</td>
+                                    <td>Doja Cat</td>
+                                    <td class="num">55,155,235</td>
+                                    <td class="num loss">-33,260</td>
+                                    <td class="num">5</td>
+                                    <td class="num">76,357,864</td>
+                                </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+
+                            <section class="sp-panel sp-toplists">
+                                <h3>Most streamed songs</h3>
+                                <p class="sp-kicker">Most streamed title from each era, plus album leaders.</p>
+                                <div class="table-wrap">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Period</th>
+                                                <th>Artist and title</th>
+                                                <th class="num">Streams</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                <tr>
+                                    <td class="era">Of all time</td>
+                                    <td>The Weeknd � Blinding Lights</td>
+                                    <td class="num">5,583,969,932</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2025</td>
+                                    <td>Alex Warren � Ordinary</td>
+                                    <td class="num">2,160,319,428</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2024</td>
+                                    <td>Lady Gaga � Die With A Smile</td>
+                                    <td class="num">3,972,607,638</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2023</td>
+                                    <td>Jung Kook � Seven</td>
+                                    <td class="num">3,080,480,030</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2022</td>
+                                    <td>Harry Styles � As It Was</td>
+                                    <td class="num">4,617,377,855</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2021</td>
+                                    <td>The Kid LAROI � STAY</td>
+                                    <td class="num">4,069,792,934</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2020</td>
+                                    <td>Glass Animals � Heat Waves</td>
+                                    <td class="num">3,923,290,997</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2019</td>
+                                    <td>The Weeknd � Blinding Lights</td>
+                                    <td class="num">5,583,969,932</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2018</td>
+                                    <td>Post Malone � Sunflower</td>
+                                    <td class="num">4,449,484,246</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2017</td>
+                                    <td>Ed Sheeran � Shape of You</td>
+                                    <td class="num">5,090,029,887</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2016</td>
+                                    <td>The Weeknd � Starboy</td>
+                                    <td class="num">4,747,337,138</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2015</td>
+                                    <td>Lord Huron � The Night We Met</td>
+                                    <td class="num">3,922,263,153</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2014</td>
+                                    <td>Ed Sheeran � Photograph</td>
+                                    <td class="num">3,546,170,665</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2013</td>
+                                    <td>Arctic Monkeys � I Wanna Be Yours</td>
+                                    <td class="num">3,989,623,320</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2012</td>
+                                    <td>The Neighbourhood � Sweater Weather</td>
+                                    <td class="num">4,866,466,838</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2011</td>
+                                    <td>Macklemore � Can't Hold Us</td>
+                                    <td class="num">3,497,356,957</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2010</td>
+                                    <td>Bruno Mars � Just the Way You Are</td>
+                                    <td class="num">3,467,346,918</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2005-2009</td>
+                                    <td>Coldplay � Viva La Vida</td>
+                                    <td class="num">3,511,813,198</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From 2000-2004</td>
+                                    <td>Coldplay � Yellow</td>
+                                    <td class="num">3,967,736,193</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From the 90s</td>
+                                    <td>The Goo Goo Dolls � Iris</td>
+                                    <td class="num">3,691,559,506</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From the 80s</td>
+                                    <td>The Police � Every Breath You Take</td>
+                                    <td class="num">3,742,943,379</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From the 70s</td>
+                                    <td>Queen � Bohemian Rhapsody</td>
+                                    <td class="num">3,267,193,062</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From the 60s</td>
+                                    <td>Creedence Clearwater Revival � Fortunate Son</td>
+                                    <td class="num">1,988,538,659</td>
+                                </tr>
+                                <tr>
+                                    <td class="era">From before the 60s</td>
+                                    <td>Bobby Helms � Jingle Bell Rock</td>
+                                    <td class="num">1,466,912,308</td>
+                                </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <h3 class="dash-sub">Most streamed albums</h3>
+                                <div class="table-wrap">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>Period</th>
+                                                <th>Artist and title</th>
+                                                <th class="num">Streams</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="era">Of all time</td>
+                                                <td>Ed Sheeran � +-=��</td>
+                                                <td class="num">37,414,454,148</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="era">By least streamed track</td>
+                                                <td>Olivia Rodrigo � SOUR</td>
+                                                <td class="num">446,504,688</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+            </main>
+            <footer class="home-footer">
+                <p>Spotify daily, weekly, artist, and listener totals on Kworb.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
