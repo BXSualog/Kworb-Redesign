@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTunes Canada — Kworb</title>
+    <meta name="description" content="Live iTunes Canada song chart with hourly popularity snapshots on Kworb.">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/platforms/itunes.css">
+</head>
+<body class="page-itunes">
+    <div class="home-app" id="top">
+        <aside class="home-sidebar" id="site-nav">
+            <a class="home-logo" href="../../index.html">KWORB</a>
+            <nav aria-label="Kworb sections">
+                <div class="nav-group">
+                    <a class="nav-home" href="../home.html">Home</a>
+                </div>
+                <div class="nav-group">
+                    <p class="nav-label">Discover</p>
+                    <a class="nav-charts" href="../discover/charts.html">Charts</a>
+                    <a class="nav-worldwide" href="../discover/worldwide.html">Worldwide</a>
+                    <a class="nav-trending" href="../discover/trending.html">Trending</a>
+                    <a class="nav-radio" href="../discover/radio.html">Radio</a>
+                </div>
+                <div class="nav-group">
+                    <p class="nav-label">Platforms</p>
+                    <a class="nav-spotify" href="../platforms/spotify.html">Spotify</a>
+                    <a class="nav-itunes is-active" href="../platforms/itunes.html">iTunes</a>
+                    <a class="nav-youtube" href="../platforms/youtube.html">YouTube</a>
+                </div>
+                <div class="nav-group">
+                    <p class="nav-label">Artists</p>
+                    <a class="nav-artists" href="../artists/artists.html">Artists</a>
+                </div>
+            </nav>
+        </aside>
+
+        <div class="home-stage">
+            <input class="nav-check" type="checkbox" id="nav-open" aria-label="Open menu">
+            <label class="nav-backdrop" for="nav-open">
+                <span class="visually-hidden">Close menu</span>
+            </label>
+            <header class="home-top">
+                <label class="nav-toggle" for="nav-open">
+                    <span class="visually-hidden">Menu</span>
+                    <span class="nav-toggle-bars" aria-hidden="true"></span>
+                </label>
+                <label class="home-search">
+                    <span class="visually-hidden">Search</span>
+                    <input type="search" name="q" placeholder="Search artist, song, album..." autocomplete="off">
+                </label>
+                <a class="home-back" href="../../index.html">Back to top</a>
+            </header>
+
+            <main class="home-content">
+                <section class="home-welcome">
+                    <p class="eyebrow">iTunes</p>
+                    <h1 id="itunes-heading">Live iTunes Canada</h1>
+                    <p class="section-lead" id="itunes-lead">Song popularity snapshots for the Canada storefront.</p>
+                </section>
+
+                <p class="itunes-bar">
+                    <strong id="itunes-date">2026-09-14, 19:15 EDT</strong>
+                    <details class="country-picker" id="itunes-country-picker">
+                        <summary>Canada</summary>
+                        <div class="country-list">
+                            <a href="itunes.html">United States</a>
+                            <a href="itunes-uk.html">United Kingdom</a>
+                            <a href="itunes-au.html">Australia</a>
+                            <a href="itunes-be.html">Belgium</a>
+                            <a href="itunes-br.html">Brazil</a>
+                            <a href="itunes-ca.html" class="is-active">Canada</a>
+                            <a href="itunes-fr.html">France</a>
+                            <a href="itunes-de.html">Germany</a>
+                            <a href="itunes-ie.html">Ireland</a>
+                            <a href="itunes-it.html">Italy</a>
+                            <a href="itunes-jp.html">Japan</a>
+                            <a href="itunes-mx.html">Mexico</a>
+                            <a href="itunes-nl.html">Netherlands</a>
+                            <a href="itunes-nz.html">New Zealand</a>
+                            <a href="itunes-ru.html">Russia</a>
+                            <a href="itunes-za.html">South Africa</a>
+                            <a href="itunes-es.html">Spain</a>
+                            <a href="itunes-ch.html">Switzerland</a>
+                            <a href="itunes-tr.html">Turkey</a>
+                        </div>
+                    </details>
+                    <a href="#archives">Archives</a>
+                    <a href="#cumulative">Cumulative</a>
+                </p>
+                <p class="itunes-legend">
+                    Header = number of hours ago · ??? = possibly incorrect · $ = discounted ·
+                    <a href="#timeline">Full timeline</a> ·
+                    <a href="#week">Past week</a>
+                </p>
+
+                <div class="table-wrap" id="archives">
+                    <table>
+                        <thead>
+                            <tr id="itunes-head">
+                                <th>Pos</th>
+                                <th>Artist and Title</th>
+                                <th class="num">35,227.9</th>
+                                <th class="num">35,230.6</th>
+                                <th class="num">35,432.7</th>
+                                <th class="num">35,620.2</th>
+                                <th class="num">35,623.0</th>
+                            </tr>
+                        </thead>
+                        <tbody id="itunes-body">
+                            <tr class="same">
+                                <td>1</td>
+                                <td>TALK — Run Away to Mars</td>
+                                <td class="num now">1.0000</td><td class="num">1.0000</td><td class="num miss">0.0000</td><td class="num">1.0000</td><td class="num">1.0000</td>
+                            </tr>
+                            <tr class="up">
+                                <td>2</td>
+                                <td>Preston Pablo &amp; Banx &amp; Ranx — Flowers Need Rain</td>
+                                <td class="num now">0.8854</td><td class="num">0.6417</td><td class="num">0.5879</td><td class="num">0.8441</td><td class="num">0.7682</td>
+                            </tr>
+                            <tr class="up">
+                                <td>3</td>
+                                <td>Marshmello &amp; Khalid — Numb</td>
+                                <td class="num now">0.7709</td><td class="num">0.6577</td><td class="num">0.9011</td><td class="num">0.7273</td><td class="num">0.7417</td>
+                            </tr>
+                            <tr class="up">
+                                <td>4</td>
+                                <td>Nicky Youre &amp; Dazy — Sunroof</td>
+                                <td class="num now">0.7604</td><td class="num">0.6738</td><td class="num">0.6648</td><td class="num">0.8052</td><td class="num">0.7815</td>
+                            </tr>
+                            <tr class="down">
+                                <td>5</td>
+                                <td>Kate Bush — Running Up That Hill (A Deal with God)</td>
+                                <td class="num now">0.6041</td><td class="num">0.6256</td><td class="num">1.0000</td><td class="num">0.6234</td><td class="num">0.6887</td>
+                            </tr>
+                            <tr class="down">
+                                <td>6</td>
+                                <td>Harry Styles — As It Was</td>
+                                <td class="num now">0.5834</td><td class="num">0.6417</td><td class="num">0.7472</td><td class="num">0.5974</td><td class="num">0.6556</td>
+                            </tr>
+                            <tr class="up">
+                                <td>7</td>
+                                <td>Luke Combs — The Kind of Love We Make</td>
+                                <td class="num now">0.5000</td><td class="num">0.4064</td><td class="num">0.5439</td><td class="num">0.5454</td><td class="num">0.4834</td>
+                            </tr>
+                            <tr class="down">
+                                <td>8</td>
+                                <td>Sia — Unstoppable</td>
+                                <td class="num now">0.5000</td><td class="num">0.5240</td><td class="num">0.4725</td><td class="num">0.5065</td><td class="num">0.5298</td>
+                            </tr>
+                            <tr class="down">
+                                <td>9</td>
+                                <td>Nicki Minaj — Super Freaky Girl</td>
+                                <td class="num now">0.5000</td><td class="num">0.7006</td><td class="num miss">0.0000</td><td class="num">0.5325</td><td class="num">0.5961</td>
+                            </tr>
+                            <tr class="down">
+                                <td>10</td>
+                                <td>Lizzo — About Damn Time</td>
+                                <td class="num now">0.4896</td><td class="num">0.5669</td><td class="num">0.6758</td><td class="num">0.5195</td><td class="num">0.5563</td>
+                            </tr>
+                            <tr class="up">
+                                <td>11</td>
+                                <td>Lee Brice — Soul</td>
+                                <td class="num now">0.4271</td><td class="num">0.3690</td><td class="num">0.4780</td><td class="num">0.4286</td><td class="num">0.4901</td>
+                            </tr>
+                            <tr class="down">
+                                <td>12</td>
+                                <td>Cole Swindell — She Had Me At Heads Carolina</td>
+                                <td class="num now">0.3959</td><td class="num">0.4117</td><td class="num">0.4561</td><td class="num">0.4286</td><td class="num">0.5232</td>
+                            </tr>
+                            <tr class="down">
+                                <td>13</td>
+                                <td>Camila Cabello — Bam Bam (feat. Ed Sheeran)</td>
+                                <td class="num now">0.3959</td><td class="num">0.4225</td><td class="num">0.5879</td><td class="num">0.3766</td><td class="num">0.4039</td>
+                            </tr>
+                            <tr class="down">
+                                <td>14</td>
+                                <td>Jax — Victoria’s Secret</td>
+                                <td class="num now">0.3854</td><td class="num">0.4279</td><td class="num">0.6318</td><td class="num">0.4026</td><td class="num">0.4304</td>
+                            </tr>
+                            <tr class="down">
+                                <td>15</td>
+                                <td>Tiësto &amp; Charli XCX — Hot In It</td>
+                                <td class="num now">0.3854</td><td class="num">0.4706</td><td class="num">0.1318</td><td class="num">0.4155</td><td class="num">0.4371</td>
+                            </tr>
+                            <tr class="up">
+                                <td>16</td>
+                                <td>Bailey Zimmerman — Rock and A Hard Place</td>
+                                <td class="num now">0.3646</td><td class="num">0.3315</td><td class="num">0.3022</td><td class="num">0.4155</td><td class="num">0.4106</td>
+                            </tr>
+                            <tr class="down">
+                                <td>17</td>
+                                <td>David Guetta — Titanium (feat. Sia)</td>
+                                <td class="num now">0.3646</td><td class="num">0.4011</td><td class="num miss">0.0000</td><td class="num">0.4155</td><td class="num">0.3907</td>
+                            </tr>
+                            <tr class="up">
+                                <td>18</td>
+                                <td>Öwnboss &amp; SEVEK — Move Your Body</td>
+                                <td class="num now">0.3438</td><td class="num">0.2781</td><td class="num miss">0.0000</td><td class="num">0.3507</td><td class="num">0.3312</td>
+                            </tr>
+                            <tr class="down">
+                                <td>19</td>
+                                <td>OneRepublic — I Ain't Worried</td>
+                                <td class="num now">0.3438</td><td class="num">0.4225</td><td class="num">0.4176</td><td class="num">0.3376</td><td class="num">0.3973</td>
+                            </tr>
+                            <tr class="up">
+                                <td>20</td>
+                                <td>Sofia Carson — Come Back Home</td>
+                                <td class="num now">0.3438</td><td class="num">0.3102</td><td class="num">0.3132</td><td class="num">0.3507</td><td class="num">0.3708</td>
+                            </tr>
+                            <tr class="up">
+                                <td>21</td>
+                                <td>Black Eyed Peas, Shakira &amp; David Guetta — DON'T YOU WORRY</td>
+                                <td class="num now">0.3334</td><td class="num">0.2888</td><td class="num">0.3187</td><td class="num">0.3116</td><td class="num">0.3510</td>
+                            </tr>
+                            <tr class="up">
+                                <td>22</td>
+                                <td>Ed Sheeran — Shivers</td>
+                                <td class="num now">0.2812</td><td class="num">0.2460</td><td class="num">0.3407</td><td class="num">0.2858</td><td class="num">0.2649</td>
+                            </tr>
+                            <tr class="down">
+                                <td>23</td>
+                                <td>Josh Ross — First Taste of Gone</td>
+                                <td class="num now">0.2709</td><td class="num">0.3315</td><td class="num">0.4780</td><td class="num">0.2727</td><td class="num">0.2980</td>
+                            </tr>
+                            <tr class="down">
+                                <td>24</td>
+                                <td>Drake Milligan — Kiss Goodbye All Night</td>
+                                <td class="num now">0.2604</td><td class="num">0.4117</td><td class="num miss">0.0000</td><td class="num">0.2858</td><td class="num">0.3708</td>
+                            </tr>
+                            <tr class="down">
+                                <td>25</td>
+                                <td>Beyoncé — BREAK MY SOUL</td>
+                                <td class="num now">0.2604</td><td class="num">0.3529</td><td class="num">0.6099</td><td class="num">0.2598</td><td class="num">0.3179</td>
+                            </tr>
+                            <tr class="up">
+                                <td>26</td>
+                                <td>Elton John &amp; Dua Lipa — Cold Heart (PNAU Remix)</td>
+                                <td class="num now">0.2604</td><td class="num">0.2567</td><td class="num">0.4725</td><td class="num">0.2727</td><td class="num">0.3047</td>
+                            </tr>
+                            <tr class="up">
+                                <td>27</td>
+                                <td>Morgan Wallen — Wasted On You</td>
+                                <td class="num now">0.2604</td><td class="num">0.2300</td><td class="num">0.2858</td><td class="num">0.2208</td><td class="num">0.2053</td>
+                            </tr>
+                            <tr class="up">
+                                <td>28</td>
+                                <td>benny blanco, BTS &amp; Snoop Dogg — Bad Decisions</td>
+                                <td class="num now">0.2396</td><td class="num">0.1069</td><td class="num miss">0.0000</td><td class="num">0.2467</td><td class="num">0.2318</td>
+                            </tr>
+                            <tr class="down">
+                                <td>29</td>
+                                <td>Drake Milligan — Sounds Like Something I'd Do</td>
+                                <td class="num now">0.2396</td><td class="num">0.3315</td><td class="num miss">0.0000</td><td class="num">0.2598</td><td class="num">0.3113</td>
+                            </tr>
+                            <tr class="down">
+                                <td>30</td>
+                                <td>Harry Styles — Late Night Talking</td>
+                                <td class="num now">0.2396</td><td class="num">0.3102</td><td class="num">0.1868</td><td class="num">0.2467</td><td class="num">0.2715</td>
+                            </tr>
+                            <tr class="up">
+                                <td>31</td>
+                                <td>Keung To — 風雨不改 (電影《阿媽有咗第二個》主題曲)</td>
+                                <td class="num now">0.2396</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.2208</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="up">
+                                <td>32</td>
+                                <td>David Guetta — Without You (feat. Usher)</td>
+                                <td class="num now">0.2291</td><td class="num">0.1069</td><td class="num miss">0.0000</td><td class="num">0.2598</td><td class="num">0.1722</td>
+                            </tr>
+                            <tr class="down">
+                                <td>33</td>
+                                <td>Kane Brown — Like I Love Country Music</td>
+                                <td class="num now">0.2291</td><td class="num">0.2460</td><td class="num">0.2362</td><td class="num">0.2208</td><td class="num">0.2583</td>
+                            </tr>
+                            <tr class="down">
+                                <td>34</td>
+                                <td>Shawn Mendes — When You're Gone</td>
+                                <td class="num now">0.2291</td><td class="num">0.2834</td><td class="num">0.4176</td><td class="num">0.2208</td><td class="num">0.2782</td>
+                            </tr>
+                            <tr class="up">
+                                <td>35</td>
+                                <td>Chapel Hart — You Can Have Him Jolene</td>
+                                <td class="num now">0.2188</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.2208</td><td class="num">0.0596</td>
+                            </tr>
+                            <tr class="down">
+                                <td>36</td>
+                                <td>David Guetta — Turn Me On (feat. Nicki Minaj)</td>
+                                <td class="num now">0.2084</td><td class="num">0.2085</td><td class="num miss">0.0000</td><td class="num">0.2208</td><td class="num">0.2119</td>
+                            </tr>
+                            <tr class="up">
+                                <td>37</td>
+                                <td>Jelly Roll — Son Of A Sinner</td>
+                                <td class="num now">0.1979</td><td class="num">0.1658</td><td class="num">0.1318</td><td class="num">0.2208</td><td class="num">0.2252</td>
+                            </tr>
+                            <tr class="down">
+                                <td>38</td>
+                                <td>Lady Gaga — Hold My Hand (Music From The Motion Picture &quot;Top Gun: Maverick&quot;)</td>
+                                <td class="num now">0.1875</td><td class="num">0.2781</td><td class="num">0.2968</td><td class="num">0.1948</td><td class="num">0.2185</td>
+                            </tr>
+                            <tr class="down">
+                                <td>39</td>
+                                <td>Post Malone — I Like You (A Happier Song) [feat. Doja Cat]</td>
+                                <td class="num now">0.1875</td><td class="num">0.2834</td><td class="num">0.3077</td><td class="num">0.2078</td><td class="num">0.2649</td>
+                            </tr>
+                            <tr class="up">
+                                <td>40</td>
+                                <td>John Travolta &amp; Olivia Newton-John — You're the One That I Want</td>
+                                <td class="num now">0.1875</td><td class="num">0.1498</td><td class="num miss">0.0000</td><td class="num">0.1559</td><td class="num">0.1854</td>
+                            </tr>
+                            <tr class="up">
+                                <td>41</td>
+                                <td>Tim &amp; The Glory Boys — Float</td>
+                                <td class="num now">0.1771</td><td class="num">0.1177</td><td class="num miss">0.0000</td><td class="num">0.1559</td><td class="num">0.1788</td>
+                            </tr>
+                            <tr class="down">
+                                <td>42</td>
+                                <td>Sofia Carson — I Didn't Know</td>
+                                <td class="num now">0.1771</td><td class="num">0.2246</td><td class="num">0.2968</td><td class="num">0.1818</td><td class="num">0.2583</td>
+                            </tr>
+                            <tr class="down">
+                                <td>43</td>
+                                <td>Glass Animals — Heat Waves</td>
+                                <td class="num now">0.1771</td><td class="num">0.2354</td><td class="num">0.4066</td><td class="num">0.2078</td><td class="num">0.1920</td>
+                            </tr>
+                            <tr class="up">
+                                <td>44</td>
+                                <td>Harry Styles — Sign of the Times</td>
+                                <td class="num now">0.1771</td><td class="num">0.1123</td><td class="num miss">0.0000</td><td class="num">0.2078</td><td class="num">0.1523</td>
+                            </tr>
+                            <tr class="down">
+                                <td>45</td>
+                                <td>Martin Solveig &amp; Dragonette — Hello</td>
+                                <td class="num now">0.1666</td><td class="num">0.1925</td><td class="num miss">0.0000</td><td class="num">0.1559</td><td class="num">0.1458</td>
+                            </tr>
+                            <tr class="down">
+                                <td>46</td>
+                                <td>Doja Cat — Vegas (From the Original Motion Picture Soundtrack ELVIS)</td>
+                                <td class="num now">0.1666</td><td class="num">0.1871</td><td class="num">0.2528</td><td class="num">0.1688</td><td class="num">0.2318</td>
+                            </tr>
+                            <tr class="up">
+                                <td>47</td>
+                                <td>Walker Hayes — AA</td>
+                                <td class="num now">0.1666</td><td class="num">0.1177</td><td class="num">0.2417</td><td class="num">0.1688</td><td class="num">0.1854</td>
+                            </tr>
+                            <tr class="up">
+                                <td>48</td>
+                                <td>Lady Gaga — Hold My Hand</td>
+                                <td class="num now">0.1666</td><td class="num">0.1337</td><td class="num">0.1593</td><td class="num">0.1688</td><td class="num">0.1589</td>
+                            </tr>
+                            <tr class="down">
+                                <td>49</td>
+                                <td>Sofia Carson — I Hate the Way</td>
+                                <td class="num now">0.1666</td><td class="num">0.1711</td><td class="num">0.2417</td><td class="num">0.1688</td><td class="num">0.2119</td>
+                            </tr>
+                            <tr class="up">
+                                <td>50</td>
+                                <td>Charlie Puth &amp; Jung Kook — Left and Right</td>
+                                <td class="num now">0.1666</td><td class="num">0.1337</td><td class="num">0.1868</td><td class="num">0.1428</td><td class="num">0.1722</td>
+                            </tr>
+                            <tr class="up">
+                                <td>51</td>
+                                <td>TALK — Run Away to Mars</td>
+                                <td class="num now">0.1562</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1559</td><td class="num">0.1655</td>
+                            </tr>
+                            <tr class="down">
+                                <td>52</td>
+                                <td>Imagine Dragons — Bones</td>
+                                <td class="num now">0.1562</td><td class="num">0.2085</td><td class="num">0.1703</td><td class="num">0.1559</td><td class="num">0.1722</td>
+                            </tr>
+                            <tr class="up">
+                                <td>53</td>
+                                <td>David Morris — Dutton Ranch Freestyle</td>
+                                <td class="num now">0.1562</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1688</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>54</td>
+                                <td>Banx &amp; Ranx &amp; Rêve — Headphones</td>
+                                <td class="num now">0.1562</td><td class="num">0.1765</td><td class="num">0.2362</td><td class="num">0.1299</td><td class="num">0.1458</td>
+                            </tr>
+                            <tr class="down">
+                                <td>55</td>
+                                <td>Tyler Hubbard — 5 Foot 9</td>
+                                <td class="num now">0.1562</td><td class="num">0.1765</td><td class="num">0.2362</td><td class="num">0.1688</td><td class="num">0.1920</td>
+                            </tr>
+                            <tr class="up">
+                                <td>56</td>
+                                <td>Latto &amp; Mariah Carey — Big Energy (Remix) [feat. DJ Khaled]</td>
+                                <td class="num now">0.1562</td><td class="num">0.1337</td><td class="num">0.1593</td><td class="num">0.1559</td><td class="num">0.1523</td>
+                            </tr>
+                            <tr class="up">
+                                <td>57</td>
+                                <td>Kilotile — Cry to Me</td>
+                                <td class="num now">0.1562</td><td class="num">0.1283</td><td class="num miss">0.0000</td><td class="num">0.1299</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="up">
+                                <td>58</td>
+                                <td>Yung Gravy — Betty (Get Money)</td>
+                                <td class="num now">0.1562</td><td class="num">0.1550</td><td class="num miss">0.0000</td><td class="num">0.1818</td><td class="num">0.1987</td>
+                            </tr>
+                            <tr class="up">
+                                <td>59</td>
+                                <td>Chapel Hart — The Girls Are Back in Town</td>
+                                <td class="num now">0.1562</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1428</td><td class="num">0.0066</td>
+                            </tr>
+                            <tr class="down">
+                                <td>60</td>
+                                <td>Joji — Glimpse of Us</td>
+                                <td class="num now">0.1459</td><td class="num">0.1498</td><td class="num">0.1263</td><td class="num">0.1428</td><td class="num">0.1589</td>
+                            </tr>
+                            <tr class="up">
+                                <td>61</td>
+                                <td>Pitbull &amp; Zac Brown — Can't Stop Us Now</td>
+                                <td class="num now">0.1459</td><td class="num miss">0.0000</td><td class="num">0.1373</td><td class="num">0.1428</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="up">
+                                <td>62</td>
+                                <td>Harry Styles — Watermelon Sugar</td>
+                                <td class="num now">0.1459</td><td class="num">0.1177</td><td class="num">0.1648</td><td class="num">0.1688</td><td class="num">0.1523</td>
+                            </tr>
+                            <tr class="down">
+                                <td>63</td>
+                                <td>Fred again.. &amp; Swedish House Mafia — Turn On The Lights again.. (feat. Future)</td>
+                                <td class="num now">0.1459</td><td class="num">0.1498</td><td class="num miss">0.0000</td><td class="num">0.1559</td><td class="num">0.1854</td>
+                            </tr>
+                            <tr class="down">
+                                <td>64</td>
+                                <td>Tiësto &amp; Ava Max — The Motto</td>
+                                <td class="num now">0.1459</td><td class="num">0.1711</td><td class="num">0.2472</td><td class="num">0.1688</td><td class="num">0.1788</td>
+                            </tr>
+                            <tr class="down">
+                                <td>65</td>
+                                <td>Morgan Wallen — You Proof</td>
+                                <td class="num now">0.1354</td><td class="num">0.1498</td><td class="num">0.1154</td><td class="num">0.1428</td><td class="num">0.1125</td>
+                            </tr>
+                            <tr class="down">
+                                <td>66</td>
+                                <td>Able Heart — Whisper</td>
+                                <td class="num now">0.1354</td><td class="num">0.1550</td><td class="num miss">0.0000</td><td class="num">0.1428</td><td class="num">0.1788</td>
+                            </tr>
+                            <tr class="up">
+                                <td>67</td>
+                                <td>Ghost — Mary on a Cross</td>
+                                <td class="num now">0.1354</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1688</td><td class="num">0.1788</td>
+                            </tr>
+                            <tr class="down">
+                                <td>68</td>
+                                <td>Farruko — Pepas</td>
+                                <td class="num now">0.1354</td><td class="num">0.1818</td><td class="num">0.1263</td><td class="num">0.1559</td><td class="num">0.1722</td>
+                            </tr>
+                            <tr class="down">
+                                <td>69</td>
+                                <td>Latto — Big Energy</td>
+                                <td class="num now">0.1354</td><td class="num">0.1711</td><td class="num">0.2417</td><td class="num">0.1299</td><td class="num">0.1458</td>
+                            </tr>
+                            <tr class="up">
+                                <td>70</td>
+                                <td>Major Lazer — Lean On (feat. MØ &amp; DJ Snake)</td>
+                                <td class="num now">0.1354</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1299</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="up">
+                                <td>71</td>
+                                <td>Tiësto &amp; KAROL G — Don't Be Shy</td>
+                                <td class="num now">0.1354</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1169</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>72</td>
+                                <td>Olivia Newton-John — Hopelessly Devoted to You</td>
+                                <td class="num now">0.1354</td><td class="num">0.2032</td><td class="num miss">0.0000</td><td class="num">0.1299</td><td class="num">0.1458</td>
+                            </tr>
+                            <tr class="down">
+                                <td>73</td>
+                                <td>Lizzo — 2 Be Loved (Am I Ready)</td>
+                                <td class="num now">0.1354</td><td class="num">0.1871</td><td class="num miss">0.0000</td><td class="num">0.1428</td><td class="num">0.1854</td>
+                            </tr>
+                            <tr class="down">
+                                <td>74</td>
+                                <td>Willy William — Trompeta</td>
+                                <td class="num now">0.1354</td><td class="num">0.1818</td><td class="num">0.2858</td><td class="num">0.1428</td><td class="num">0.1854</td>
+                            </tr>
+                            <tr class="up">
+                                <td>75</td>
+                                <td>Zach Bryan — Something in the Orange</td>
+                                <td class="num now">0.1250</td><td class="num">0.1123</td><td class="num">0.1154</td><td class="num">0.1428</td><td class="num">0.1125</td>
+                            </tr>
+                            <tr class="up">
+                                <td>76</td>
+                                <td>Bailey Zimmerman — Fall In Love</td>
+                                <td class="num now">0.1250</td><td class="num miss">0.0000</td><td class="num">0.1758</td><td class="num">0.1428</td><td class="num">0.1193</td>
+                            </tr>
+                            <tr class="up">
+                                <td>77</td>
+                                <td>Dylan Scott — New Truck</td>
+                                <td class="num now">0.1250</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1169</td><td class="num">0.1324</td>
+                            </tr>
+                            <tr class="down">
+                                <td>78</td>
+                                <td>Chris Stapleton — Tennessee Whiskey</td>
+                                <td class="num now">0.1250</td><td class="num">0.1498</td><td class="num">0.2142</td><td class="num">0.1039</td><td class="num">0.1259</td>
+                            </tr>
+                            <tr class="up">
+                                <td>79</td>
+                                <td>Cody Johnson — 'Til You Can't</td>
+                                <td class="num now">0.1250</td><td class="num miss">0.0000</td><td class="num">0.1593</td><td class="num">0.1428</td><td class="num">0.1259</td>
+                            </tr>
+                            <tr class="up">
+                                <td>80</td>
+                                <td>Drake — Massive</td>
+                                <td class="num now">0.1250</td><td class="num">0.1177</td><td class="num">0.1758</td><td class="num">0.1299</td><td class="num">0.1589</td>
+                            </tr>
+                            <tr class="down">
+                                <td>81</td>
+                                <td>Lost Frequencies &amp; Calum Scott — Where Are You Now</td>
+                                <td class="num now">0.1250</td><td class="num">0.1444</td><td class="num">0.1154</td><td class="num">0.1169</td><td class="num">0.0928</td>
+                            </tr>
+                            <tr class="down">
+                                <td>82</td>
+                                <td>Ed Sheeran — Perfect</td>
+                                <td class="num now">0.1146</td><td class="num">0.1177</td><td class="num miss">0.0000</td><td class="num">0.1428</td><td class="num">0.1125</td>
+                            </tr>
+                            <tr class="up">
+                                <td>83</td>
+                                <td>Imagine Dragons, Arcane &amp; League of Legends — Enemy (From the series &quot;Arcane League of Legends&quot;)</td>
+                                <td class="num now">0.1146</td><td class="num">0.1069</td><td class="num">0.1868</td><td class="num">0.0779</td><td class="num">0.1193</td>
+                            </tr>
+                            <tr class="down">
+                                <td>84</td>
+                                <td>Metallica — Master of Puppets</td>
+                                <td class="num now">0.1146</td><td class="num">0.1390</td><td class="num">0.2803</td><td class="num">0.1299</td><td class="num">0.1589</td>
+                            </tr>
+                            <tr class="up">
+                                <td>85</td>
+                                <td>ERNEST — Flower Shops (feat. Morgan Wallen)</td>
+                                <td class="num now">0.1146</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1428</td><td class="num">0.1523</td>
+                            </tr>
+                            <tr class="up">
+                                <td>86</td>
+                                <td>Kane Brown — Go Around</td>
+                                <td class="num now">0.1146</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1039</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="up">
+                                <td>87</td>
+                                <td>Evanescence — Bring Me to Life</td>
+                                <td class="num now">0.1041</td><td class="num">0.1016</td><td class="num miss">0.0000</td><td class="num">0.0909</td><td class="num">0.1060</td>
+                            </tr>
+                            <tr class="up">
+                                <td>88</td>
+                                <td>AC/DC — Thunderstruck</td>
+                                <td class="num now">0.1041</td><td class="num">0.1016</td><td class="num">0.1154</td><td class="num">0.1039</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="up">
+                                <td>89</td>
+                                <td>Devon Cole — W.I.T.C.H.</td>
+                                <td class="num now">0.1041</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1039</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="up">
+                                <td>90</td>
+                                <td>Lauren Spencer Smith — Fingers Crossed</td>
+                                <td class="num now">0.0938</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1039</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="up">
+                                <td>91</td>
+                                <td>Luke Combs — Doin' This</td>
+                                <td class="num now">0.0938</td><td class="num miss">0.0000</td><td class="num">0.1428</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="up">
+                                <td>92</td>
+                                <td>Darius Rucker — Wagon Wheel</td>
+                                <td class="num now">0.0938</td><td class="num miss">0.0000</td><td class="num">0.1263</td><td class="num">0.0779</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="up">
+                                <td>93</td>
+                                <td>Elle King &amp; Miranda Lambert — Drunk (And I Don't Wanna Go Home)</td>
+                                <td class="num now">0.0938</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1259</td>
+                            </tr>
+                            <tr class="down">
+                                <td>94</td>
+                                <td>Lady Gaga — Always Remember Us This Way</td>
+                                <td class="num now">0.0938</td><td class="num">0.1016</td><td class="num">0.1154</td><td class="num miss">0.0000</td><td class="num">0.1458</td>
+                            </tr>
+                            <tr class="down">
+                                <td>95</td>
+                                <td>Shania Twain — Man! I Feel Like a Woman!</td>
+                                <td class="num now">0.0938</td><td class="num">0.1123</td><td class="num">0.1813</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>96</td>
+                                <td>The Weeknd — Blinding Lights</td>
+                                <td class="num now">0.0938</td><td class="num">0.1069</td><td class="num">0.2307</td><td class="num miss">0.0000</td><td class="num">0.0994</td>
+                            </tr>
+                            <tr class="up">
+                                <td>97</td>
+                                <td>Ed Sheeran — Bad Habits</td>
+                                <td class="num now">0.0834</td><td class="num miss">0.0000</td><td class="num">0.1868</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="up">
+                                <td>98</td>
+                                <td>Lizzo — Good as Hell</td>
+                                <td class="num now">0.0729</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="up">
+                                <td>99</td>
+                                <td>Chris Stapleton — Joy of My Life</td>
+                                <td class="num now">0.0729</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="up">
+                                <td>100</td>
+                                <td>Demi Lovato — 29</td>
+                                <td class="num now">0.0625</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Lizzo — About Damn Time</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1263</td><td class="num">0.0909</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Luke Bryan — Country On</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1324</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Halsey — So Good</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.0779</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Old Dominion — No Hard Feelings</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.1177</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1259</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Shania Twain — Not Just A Girl</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.2417</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Walker Hayes — Fancy Like</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1703</td><td class="num miss">0.0000</td><td class="num">0.1125</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Elvis Presley — Suspicious Minds</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1263</td><td class="num miss">0.0000</td><td class="num">0.0861</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Lana Del Rey — Young and Beautiful</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Tones And I — Dance Monkey</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.0963</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Josh Turner — Your Man</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1373</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Jack Harlow — First Class</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.1123</td><td class="num">0.1648</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Doug and the Slugs — Day by Day</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.4231</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Justin Bieber — Ghost</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Jackson Dean — Don’t Come Lookin’</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.1230</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1125</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Doug and the Slugs — Tomcat Prowl</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1483</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Megan Thee Stallion — Her</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1259</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Jordan Davis — What My World Spins Around</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.0802</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Concrete Blonde — Joey</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1318</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>The Reklaws &amp; Jake Owen — 11 Beers</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Em Beihold — Numb Little Bug</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1263</td><td class="num">0.1039</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Ed Sheeran — 2step (feat. Lil Baby)</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.1230</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Dierks Bentley — Gold</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Lady Gaga &amp; Bradley Cooper — Shallow</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.1016</td><td class="num">0.1318</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>The Kid LAROI &amp; Justin Bieber — STAY</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1208</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Rema — Calm Down</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.0695</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1125</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>GAYLE — abcdefu</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1318</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Parmalee — Take My Name</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1373</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Jax Jones &amp; MNEK — Where Did You Go?</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1538</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Thomas Rhett — Half Of Me (feat. Riley Green)</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.0909</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1193</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Joel Corry &amp; Becky Hill — HISTORY</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Shania Twain — Any Man of Mine</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1538</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Scotty McCreery — Damn Strait</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1318</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Kenny Loggins — Danger Zone</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.1069</td><td class="num miss">0.0000</td><td class="num">0.1039</td><td class="num">0.1193</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Olivia Newton-John — Magic</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.1230</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Eminem — Lose Yourself (From &quot;8 Mile&quot; Soundtrack)</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.0695</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Nicki Minaj — Super Freaky Girl</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>TALK — How To Save A Life</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Tracy Chapman — Fast Car</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Beyoncé — ALIEN SUPERSTAR</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1263</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Journey — Don't Stop Believin'</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.1337</td><td class="num">0.1263</td><td class="num">0.0909</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>The Lumineers — Gloria</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1483</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Steve Lacy — Bad Habit</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.0963</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Wheatus — Teenage Dirtbag</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.1123</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Shania Twain — You're Still the One</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1154</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Burak Yeter — Tuesday (feat. Danelle Sandoval)</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.0963</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1259</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Beyoncé — SUMMER RENAISSANCE</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.2252</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Stray Kids — Mixtape : Time Out</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1758</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Everybody Loves an Outlaw — I See Red</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.1283</td><td class="num">0.1318</td><td class="num miss">0.0000</td><td class="num">0.1125</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Lauren Spencer Smith — Narcissist</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1593</td><td class="num">0.1039</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Benson Boone — In The Stars</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.0779</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>DJ Khaled — STAYING ALIVE (feat. Drake &amp; Lil Baby)</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Gorillaz — Cracker Island (feat. Thundercat)</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1538</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Nate Smith — Whiskey On You</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1373</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Nathan Evans — Wellerman (Sea Shanty)</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.1550</td><td class="num">0.1648</td><td class="num">0.1169</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Blasterjaxx &amp; Timmy Trumpet — Narco</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Doug and the Slugs — Too Bad</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.2252</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Jordan Davis — Buy Dirt (feat. Luke Bryan)</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.0963</td><td class="num">0.1208</td><td class="num miss">0.0000</td><td class="num">0.1458</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Walker Hayes — Y'all Life</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.2142</td><td class="num">0.1169</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Guns N' Roses — Sweet Child O' Mine</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.0909</td><td class="num">0.1318</td><td class="num miss">0.0000</td><td class="num">0.1259</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>The Goo Goo Dolls — Iris</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.1069</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1060</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Doug and the Slugs — Making It Work</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.3242</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Kygo &amp; Dean Lewis — Lost Without You</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1318</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Imagine Dragons — Believer</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1538</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Sofia Carson — Come Back Home (From &quot;Purple Hearts&quot;)</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1154</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>bbno$ — edamame (feat. Rich Brian)</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Adele — Easy On Me</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.0963</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Luke Combs — Beautiful Crazy</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1373</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="down">
+                                <td>---</td>
+                                <td>Rosa Linn — SNAP</td>
+                                <td class="num now miss">0.0000</td><td class="num">0.1390</td><td class="num">0.1483</td><td class="num miss">0.0000</td><td class="num">0.1193</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Måneskin — Beggin'</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td>
+                            </tr>
+                            <tr class="same">
+                                <td>---</td>
+                                <td>Drake Milligan — Over Drinkin' Under Thinkin'</td>
+                                <td class="num now miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num miss">0.0000</td><td class="num">0.1060</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+
+            <footer class="home-footer" id="cumulative">
+                <p>Kworb 2011–2026. Music data from Spotify, Apple Music, YouTube, iTunes, and more.</p>
+            </footer>
+        </div>
+    </div>
+        </body>
+</html>
