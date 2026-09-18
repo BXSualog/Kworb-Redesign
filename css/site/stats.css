@@ -1,0 +1,16 @@
+.pg-hits .lnk-hits {
+    color: #FFFFFF;
+}
+
+.pg-hits .prose {
+    max-width: 920px;
+}
+
+.pg-hits .prose table {
+    min-width: 0;
+}
+
+.pg-hits th:nth-child(n+2),
+.pg-hits td:nth-child(n+2) {
+    text-align: right;
+}

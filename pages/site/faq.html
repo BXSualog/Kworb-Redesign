@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ — Kworb</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/landing.css">
+    <link rel="stylesheet" href="../../css/site/faq.css">
+</head>
+<body class="pg-ask">
+    <div id="front">
+        <header class="mast">
+            <div class="mast-row">
+                <a class="mark" href="../../index.html">KWORB</a>
+                <nav class="mast-nav" aria-label="Info">
+                    <a class="lnk-hello" href="welcome.html">Welcome</a>
+                    <a class="lnk-hits" href="stats.html">Visitor Stats</a>
+                    <a class="lnk-ask" href="faq.html">FAQ</a>
+                    <a class="lnk-legal" href="privacy.html">Privacy</a>
+                </nav>
+                <a class="go mast-go" href="../home.html">Explore</a>
+            </div>
+        </header>
+
+        <section class="chunk prose">
+            <div class="prose-box">
+                <h2>Frequently Asked Questions</h2>
+
+                <h3>Kworb</h3>
+                <p><strong>Q:</strong> What is "kworb"?</p>
+                <p><strong>A:</strong> It's the nickname I use online. I'm a guy from the Netherlands and this whole website is my personal playground. I'm mostly known for administering pop culture forum ATRL, and for being a huge fan of Italian singer Tiziano Ferro. Use Twitter if you want to contact me. I usually don't respond to business proposals though since I'm not interested.</p>
+                <p><strong>Q:</strong> Can't you do something about the layout? Maybe add some graphs? Make it mobile-friendly?</p>
+                <p><strong>A:</strong> I'm more of a programmer and data scientist than a web developer, so working on the appearance has never been a priority. I'm also not a fan of graphs, I prefer to see the numbers. But feel free to use the data to make your own graphs. You can also ask me for specific data sets if you can't find them on the site, or if they're archived here in an inconvenient way.</p>
+                <p><strong>Q:</strong> Why do you only serve static web pages?</p>
+                <p><strong>A:</strong> I definitely see the advantages of a more dynamic website, but this way it's not so easy to overload the server when there are huge spikes in traffic.</p>
+
+                <h3>iTunes (popularity)</h3>
+                <p><strong>Q:</strong> What do the numbers mean?</p>
+                <p><strong>A:</strong> They show how much each song is selling relative to the #1 song. For example, a value of 0.6782 means the song is selling 67.82% of what the #1 song is selling.</p>
+                <p><strong>Q:</strong> What do the colors mean?</p>
+                <p><strong>A:</strong> When the popularity values update, the top 90 songs are ranked according to their growth, and then divided into five categories. Dark green songs show the strongest growth, dark red the weakest growth.</p>
+                <p><strong>Q:</strong> Why does your site glitch all the time? Why the incorrect updates?</p>
+                <p><strong>A:</strong> The popularity values from the iTunes feed fluctuate. Sometimes they go back in time a bit, or other weird stuff happens. My program reads the feed every couple minutes, and these current values are always displayed in the left-most column. You can tell the update is accepted as "real" if there are no question marks in the header. Sometimes fake updates still make it through, so always use your own judgment.</p>
+                <p><strong>Q:</strong> Why aren't there any popularity values for albums?</p>
+                <p><strong>A:</strong> I don't know, ask Apple.</p>
+
+                <h3>iTunes WW (global / European iTunes charts)</h3>
+                <p><strong>Q:</strong> Are the points a sales estimation?</p>
+                <p><strong>A:</strong> No, they are not.</p>
+                <p><strong>Q:</strong> Why aren't the points a sales estimation?</p>
+                <p><strong>A:</strong> The point of the chart is to measure the worldwide popularity of songs and albums. If I were to use the actual market shares, then the US and the UK combined would dwarf all other countries. To me that is not very interesting. If you want sales figures, use sources such as IFPI or Mediatraffic. The points used for this chart have absolutely nothing to do with sales.</p>
+                <p><strong>Q:</strong> Are all versions of a song or album included?</p>
+                <p><strong>A:</strong> No, only the highest charting version is taken into account. Due to the methodology it's fairer this way, although it does mean that songs with multiple versions are at a disadvantage.</p>
+
+                <h3>Artists (global iTunes / Spotify artist ranking)</h3>
+                <p><strong>Q:</strong> Are all countries that have iTunes part of this?</p>
+                <p><strong>A:</strong> Almost. Some countries have a store that is so inactive that there's no top 200 to fetch. I check periodically whether additional countries can be added.</p>
+                <p><strong>Q:</strong> Why does your site always lag behind the true positions?</p>
+                <p><strong>A:</strong> The server is constantly downloading updated top 200s for all countries, but due to the number of countries it's impossible to keep the set up-to-date. Important countries like the US are updated far more often than insignificant countries. Check the status page to see how long ago a country was updated.</p>
+                <p><strong>Q:</strong> The way you calculate the points is stupid, it's very important that you improve the methodology.</p>
+                <p><strong>A:</strong> The ranking should not be taken that seriously. This was just an easy way to do it. The different artist pages are the main feature of this section.</p>
+
+                <h3>US sales</h3>
+                <p><strong>Q:</strong> How accurate are these estimates?</p>
+                <p><strong>A:</strong> The final estimates at the end of the week usually aren't off by more than 10%. Earlier projections can be off by more, but they tend to be pretty good as well. When the actual sales are reported by Billboard/Soundscan, I adjust the estimates one last time before archiving them, but they are not exact because they are still based on the iTunes popularity values.</p>
+                <p><strong>Q:</strong> When will you be done testing this section?</p>
+                <p><strong>A:</strong> Probably never.</p>
+
+                <h3>Radio</h3>
+                <p><strong>Q:</strong> I'm lost. What do all the columns mean?</p>
+                <p><strong>A:</strong></p>
+                <ul>
+                    <li><strong>Spins</strong> = Number of times the song was played the past week (7 days).</li>
+                    <li><strong>Spins+</strong> = Change in "Spins" compared to the day before. Another way to explain this is that it's the difference between the number of spins a song received yesterday and the number of spins it received on the same day the week before.</li>
+                    <li><strong>Bullet</strong> = Total increase or decrease in spins compared to last week.</li>
+                    <li><strong>Bullet+</strong> = Change in "Bullet" compared to the day before.</li>
+                </ul>
+                <ul>
+                    <li>Positive "Bullet", positive "Bullet+" = Song is increasing, and more rapidly than before.</li>
+                    <li>Positive "Bullet", negative "Bullet+" = Song is increasing, but it's slowing down.</li>
+                    <li>Negative "Bullet", positive "Bullet+" = Song is decreasing, but not as fast as before.</li>
+                    <li>Negative "Bullet", negative "Bullet+" = Song is decreasing, even faster than before.</li>
+                </ul>
+                <ul>
+                    <li><strong>Aud</strong> = Audience reached in millions. Each spin is worth a certain audience value, depending on the station and the time of day. It is cumulative, so "100 million" does not necessarily mean that 100 million people have heard it. It could be 5 million people each hearing the song 20 times.</li>
+                    <li><strong>Aud+</strong> = Change in "Aud" compared to the day before.</li>
+                    <li><strong>Days</strong> = Number of days on the chart.</li>
+                    <li><strong>iTunes</strong> = Current US iTunes ranking.</li>
+                    <li><strong>Pk</strong> = All the peak values.</li>
+                </ul>
+                <p><strong>Q:</strong> What is the difference between "Published" and "All Stations"? Which one should I be tracking?</p>
+                <p><strong>A:</strong> "Published" is a selection of stations that best represents the format. "All Stations" is everything. For specific formats, it's better to look at the published panel. Songs are ranked by spins, and certain markets could be over-represented if they have many tiny stations. The published panel filters these out.</p>
+                <p><strong>Q:</strong> What are recurrents?</p>
+                <p><strong>A:</strong> Songs that have been removed from the chart due to being old. It's to keep the chart fresh.</p>
+                <p><strong>Q:</strong> What is "Overall AI"?</p>
+                <p><strong>A:</strong> The combined audience a song gets on all formats. The top 50 of each format is used to calculate this, so the estimate can lie a little bit under the "true" value, because the song could be charting outside the top 50 on one or more of the formats.</p>
+                <p><strong>Q:</strong> Where does the data come from?</p>
+                <p><strong>A:</strong> From All Access, who pull it from Mediabase.</p>
+                <p><strong>Q:</strong> Isn't there an overall AI list that is completely accurate?</p>
+                <p><strong>A:</strong> Another list is compiled and posted regularly that comes directly from Mediabase. But these values do not include the Latin formats, even though those formats are included in Billboard's airplay charts and the Hot 100. So both lists have their disadvantages. I think my list is more useful for the songs with the most airplay.</p>
+
+                <h3>Spotify</h3>
+                <p><strong>Q:</strong> The Spotify totals are wrong, these artists and songs have way more plays.</p>
+                <p><strong>A:</strong> Spotify doesn't provide a way to easily fetch an artist or track's total plays. The totals you see are based on the time spent in the top 200 (of a country or globally).</p>
+
+                <h3>YouTube</h3>
+                <p><strong>Q:</strong> How do you determine an artist's list of videos?</p>
+                <p><strong>A:</strong> If an artist's official channel's views predominantly consist of music/lyric videos and official audio videos, then I add all of that channel's videos. If not, then I try to filter out the other videos (including live performances). Afterwards I check if the artist has music videos on label-owned or other official channels. I add those as well, usually by searching for all of the videos on that channel that have the artist's name in the title. This way almost every new video is picked up automatically when the list is updated, which happens about twice a day.</p>
+                <p><strong>Q:</strong> Why not add videos on unofficial channels?</p>
+                <p><strong>A:</strong> It is too time-consuming to keep track of unofficial channels. These videos are also more likely to be removed from YouTube at a later date.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

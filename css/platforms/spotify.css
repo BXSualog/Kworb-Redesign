@@ -1,0 +1,208 @@
+.page-spotify .home-welcome {
+    margin-bottom: 28px;
+}
+
+.page-spotify .home-welcome h1 {
+    font-size: 36px;
+}
+
+.spotify-switcher {
+    position: relative;
+}
+
+.spotify-switcher > input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.spotify-tabs {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+    padding: 4px;
+    margin: 0 0 28px;
+    background: #101510;
+    border: 1px solid #1D261F;
+    border-radius: 999px;
+}
+
+.spotify-tabs label {
+    display: block;
+    padding: 11px 12px;
+    border-radius: 999px;
+    background: transparent;
+    color: #B3B8B4;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.spotify-tabs label:hover,
+.spotify-tabs label:focus {
+    color: #FFFFFF;
+    background: #161C17;
+}
+
+#sp-countries:checked ~ .spotify-tabs label[for="sp-countries"],
+#sp-artists:checked ~ .spotify-tabs label[for="sp-artists"],
+#sp-listeners:checked ~ .spotify-tabs label[for="sp-listeners"],
+#sp-toplists:checked ~ .spotify-tabs label[for="sp-toplists"] {
+    background: #1DB954;
+    color: #050706;
+}
+
+.sp-panel {
+    display: none;
+}
+
+#sp-countries:checked ~ .spotify-panels .sp-countries,
+#sp-artists:checked ~ .spotify-panels .sp-artists,
+#sp-listeners:checked ~ .spotify-panels .sp-listeners,
+#sp-toplists:checked ~ .spotify-panels .sp-toplists {
+    display: block;
+}
+
+.sp-panel h3 {
+    font-size: 20px;
+    letter-spacing: 0;
+    margin-bottom: 6px;
+}
+
+.sp-kicker {
+    color: #777D79;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.letter-head {
+    display: none;
+}
+
+.letter-group,
+.letter-rows {
+    display: contents;
+}
+
+.country-directory {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 48px;
+    border-top: 1px solid #1D261F;
+}
+
+.country-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 0;
+    border-bottom: 1px solid #1D261F;
+}
+
+.country-row strong {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.chart-links {
+    color: #35D66F;
+    font-size: 13px;
+}
+
+.chart-links .sep {
+    color: #3D4A40;
+    margin: 0 6px;
+}
+
+.page-spotify .table-wrap {
+    background: transparent;
+    border: 1px solid #1D261F;
+    border-radius: 8px;
+    box-shadow: none;
+    overflow: visible;
+}
+
+.page-spotify table {
+    min-width: 640px;
+}
+
+.page-spotify .artists-table,
+.page-spotify .listeners-table {
+    min-width: 800px;
+}
+
+.page-spotify thead th {
+    background: #080B09;
+}
+
+.page-spotify td.num,
+.page-spotify th.num {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.page-spotify tbody tr:hover td {
+    background: #101510;
+}
+
+.artists-table td:first-child,
+.listeners-table td:first-child {
+    color: #777D79;
+}
+
+.loss {
+    color: #D07A7A;
+}
+
+.peak-now {
+    margin-left: 8px;
+    color: #35D66F;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.era {
+    color: #777D79;
+    font-size: 12px;
+}
+
+.page-spotify .dash-sub {
+    margin-top: 32px;
+}
+
+@media (min-width: 1101px) {
+    .spotify-tabs {
+        position: sticky;
+        top: 74px;
+        z-index: 9;
+    }
+}
+
+@media (max-width: 1100px) {
+    .country-directory {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .spotify-tabs {
+        grid-template-columns: 1fr 1fr;
+        position: static;
+        border-radius: 18px;
+    }
+
+    .page-spotify .home-welcome h1 {
+        font-size: 28px;
+    }
+}
